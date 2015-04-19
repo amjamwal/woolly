@@ -1,0 +1,1605 @@
+INFO  [2015-04-18 11:33:38,193] [ ] io.dropwizard.server.ServerFactory: Starting WoollyService
+INFO  [2015-04-18 11:33:38,641] [ ] org.eclipse.jetty.setuid.SetUIDListener: Opened application@312b34e3{HTTP/1.1}{0.0.0.0:26000}
+INFO  [2015-04-18 11:33:38,641] [ ] org.eclipse.jetty.setuid.SetUIDListener: Opened admin@26844abb{HTTP/1.1}{0.0.0.0:26001}
+INFO  [2015-04-18 11:33:38,647] [ ] org.eclipse.jetty.server.Server: jetty-9.0.7.v20131107
+INFO  [2015-04-18 11:33:39,110] [ ] com.sun.jersey.server.impl.application.WebApplicationImpl: Initiating Jersey application, version 'Jersey: 1.18.1 02/19/2014 03:28 AM'
+INFO  [2015-04-18 11:33:39,283] [ ] io.dropwizard.jersey.DropwizardResourceConfig: The following paths were found for the configured resources:
+
+
+ERROR [2015-04-18 11:33:39,964] [ ] com.sun.jersey.server.impl.application.RootResourceUriRules: The ResourceConfig instance does not contain any root resource classes.
+WARN  [2015-04-18 11:33:39,980] [ ] /: unavailable
+! com.sun.jersey.api.container.ContainerException: The ResourceConfig instance does not contain any root resource classes.
+! at com.sun.jersey.server.impl.application.RootResourceUriRules.<init>(RootResourceUriRules.java:99)
+! at com.sun.jersey.server.impl.application.WebApplicationImpl._initiate(WebApplicationImpl.java:1359)
+! at com.sun.jersey.server.impl.application.WebApplicationImpl.access$700(WebApplicationImpl.java:180)
+! at com.sun.jersey.server.impl.application.WebApplicationImpl$13.f(WebApplicationImpl.java:799)
+! at com.sun.jersey.server.impl.application.WebApplicationImpl$13.f(WebApplicationImpl.java:795)
+! at com.sun.jersey.spi.inject.Errors.processWithErrors(Errors.java:193)
+! at com.sun.jersey.server.impl.application.WebApplicationImpl.initiate(WebApplicationImpl.java:795)
+! at com.hubspot.dropwizard.guice.GuiceContainer.initiate(GuiceContainer.java:70)
+! at com.sun.jersey.spi.container.servlet.ServletContainer$InternalWebComponent.initiate(ServletContainer.java:321)
+! at com.sun.jersey.spi.container.servlet.WebComponent.load(WebComponent.java:605)
+! at com.sun.jersey.spi.container.servlet.WebComponent.init(WebComponent.java:207)
+! at com.sun.jersey.spi.container.servlet.ServletContainer.init(ServletContainer.java:376)
+! at com.sun.jersey.spi.container.servlet.ServletContainer.init(ServletContainer.java:559)
+! at javax.servlet.GenericServlet.init(GenericServlet.java:244)
+! at org.eclipse.jetty.servlet.ServletHolder.initServlet(ServletHolder.java:540)
+! at org.eclipse.jetty.servlet.ServletHolder.initialize(ServletHolder.java:349)
+! at org.eclipse.jetty.servlet.ServletHandler.initialize(ServletHandler.java:812)
+! at org.eclipse.jetty.servlet.ServletContextHandler.startContext(ServletContextHandler.java:288)
+! at org.eclipse.jetty.server.handler.ContextHandler.doStart(ContextHandler.java:732)
+! at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:69)
+! at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:118)
+! at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:100)
+! at org.eclipse.jetty.server.handler.AbstractHandler.doStart(AbstractHandler.java:60)
+! at com.codahale.metrics.jetty9.InstrumentedHandler.doStart(InstrumentedHandler.java:92)
+! at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:69)
+! at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:118)
+! at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:100)
+! at org.eclipse.jetty.server.handler.AbstractHandler.doStart(AbstractHandler.java:60)
+! at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:69)
+! at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:118)
+! at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:100)
+! at org.eclipse.jetty.server.handler.AbstractHandler.doStart(AbstractHandler.java:60)
+! at org.eclipse.jetty.server.handler.RequestLogHandler.doStart(RequestLogHandler.java:131)
+! at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:69)
+! at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:118)
+! at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:100)
+! at org.eclipse.jetty.server.handler.AbstractHandler.doStart(AbstractHandler.java:60)
+! at org.eclipse.jetty.server.handler.StatisticsHandler.doStart(StatisticsHandler.java:233)
+! at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:69)
+! at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:118)
+! at org.eclipse.jetty.server.Server.start(Server.java:342)
+! at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:100)
+! at org.eclipse.jetty.server.handler.AbstractHandler.doStart(AbstractHandler.java:60)
+! at org.eclipse.jetty.server.Server.doStart(Server.java:290)
+! at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:69)
+! at io.dropwizard.cli.ServerCommand.run(ServerCommand.java:43)
+! at io.dropwizard.cli.EnvironmentCommand.run(EnvironmentCommand.java:43)
+! at io.dropwizard.cli.ConfiguredCommand.run(ConfiguredCommand.java:76)
+! at io.dropwizard.cli.Cli.run(Cli.java:70)
+! at io.dropwizard.Application.run(Application.java:72)
+! at woolly.WoollyService.main(WoollyService.java:33)
+WARN  [2015-04-18 11:33:39,983] [ ] org.eclipse.jetty.util.component.AbstractLifeCycle: FAILED i.d.j.MutableServletContextHandler@31142d58{/,null,STARTING}: javax.servlet.ServletException: com.hubspot.dropwizard.guice.GuiceContainer-44b194fe@39dc8911==com.hubspot.dropwizard.guice.GuiceContainer,1,false
+! javax.servlet.ServletException: com.hubspot.dropwizard.guice.GuiceContainer-44b194fe@39dc8911==com.hubspot.dropwizard.guice.GuiceContainer,1,false
+! at org.eclipse.jetty.servlet.ServletHolder.initServlet(ServletHolder.java:561)
+! at org.eclipse.jetty.servlet.ServletHolder.initialize(ServletHolder.java:349)
+! at org.eclipse.jetty.servlet.ServletHandler.initialize(ServletHandler.java:812)
+! at org.eclipse.jetty.servlet.ServletContextHandler.startContext(ServletContextHandler.java:288)
+! at org.eclipse.jetty.server.handler.ContextHandler.doStart(ContextHandler.java:732)
+! at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:69)
+! at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:118)
+! at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:100)
+! at org.eclipse.jetty.server.handler.AbstractHandler.doStart(AbstractHandler.java:60)
+! at com.codahale.metrics.jetty9.InstrumentedHandler.doStart(InstrumentedHandler.java:92)
+! at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:69)
+! at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:118)
+! at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:100)
+! at org.eclipse.jetty.server.handler.AbstractHandler.doStart(AbstractHandler.java:60)
+! at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:69)
+! at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:118)
+! at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:100)
+! at org.eclipse.jetty.server.handler.AbstractHandler.doStart(AbstractHandler.java:60)
+! at org.eclipse.jetty.server.handler.RequestLogHandler.doStart(RequestLogHandler.java:131)
+! at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:69)
+! at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:118)
+! at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:100)
+! at org.eclipse.jetty.server.handler.AbstractHandler.doStart(AbstractHandler.java:60)
+! at org.eclipse.jetty.server.handler.StatisticsHandler.doStart(StatisticsHandler.java:233)
+! at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:69)
+! at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:118)
+! at org.eclipse.jetty.server.Server.start(Server.java:342)
+! at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:100)
+! at org.eclipse.jetty.server.handler.AbstractHandler.doStart(AbstractHandler.java:60)
+! at org.eclipse.jetty.server.Server.doStart(Server.java:290)
+! at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:69)
+! at io.dropwizard.cli.ServerCommand.run(ServerCommand.java:43)
+! at io.dropwizard.cli.EnvironmentCommand.run(EnvironmentCommand.java:43)
+! at io.dropwizard.cli.ConfiguredCommand.run(ConfiguredCommand.java:76)
+! at io.dropwizard.cli.Cli.run(Cli.java:70)
+! at io.dropwizard.Application.run(Application.java:72)
+! at woolly.WoollyService.main(WoollyService.java:33)
+! Caused by: com.sun.jersey.api.container.ContainerException: The ResourceConfig instance does not contain any root resource classes.
+! at com.sun.jersey.server.impl.application.RootResourceUriRules.<init>(RootResourceUriRules.java:99)
+! at com.sun.jersey.server.impl.application.WebApplicationImpl._initiate(WebApplicationImpl.java:1359)
+! at com.sun.jersey.server.impl.application.WebApplicationImpl.access$700(WebApplicationImpl.java:180)
+! at com.sun.jersey.server.impl.application.WebApplicationImpl$13.f(WebApplicationImpl.java:799)
+! at com.sun.jersey.server.impl.application.WebApplicationImpl$13.f(WebApplicationImpl.java:795)
+! at com.sun.jersey.spi.inject.Errors.processWithErrors(Errors.java:193)
+! at com.sun.jersey.server.impl.application.WebApplicationImpl.initiate(WebApplicationImpl.java:795)
+! at com.hubspot.dropwizard.guice.GuiceContainer.initiate(GuiceContainer.java:70)
+! at com.sun.jersey.spi.container.servlet.ServletContainer$InternalWebComponent.initiate(ServletContainer.java:321)
+! at com.sun.jersey.spi.container.servlet.WebComponent.load(WebComponent.java:605)
+! at com.sun.jersey.spi.container.servlet.WebComponent.init(WebComponent.java:207)
+! at com.sun.jersey.spi.container.servlet.ServletContainer.init(ServletContainer.java:376)
+! at com.sun.jersey.spi.container.servlet.ServletContainer.init(ServletContainer.java:559)
+! at javax.servlet.GenericServlet.init(GenericServlet.java:244)
+! at org.eclipse.jetty.servlet.ServletHolder.initServlet(ServletHolder.java:540)
+! ... 36 common frames omitted
+WARN  [2015-04-18 11:33:39,984] [ ] org.eclipse.jetty.util.component.AbstractLifeCycle: FAILED com.codahale.metrics.jetty9.InstrumentedHandler@e38f0b7: javax.servlet.ServletException: com.hubspot.dropwizard.guice.GuiceContainer-44b194fe@39dc8911==com.hubspot.dropwizard.guice.GuiceContainer,1,false
+! javax.servlet.ServletException: com.hubspot.dropwizard.guice.GuiceContainer-44b194fe@39dc8911==com.hubspot.dropwizard.guice.GuiceContainer,1,false
+! at org.eclipse.jetty.servlet.ServletHolder.initServlet(ServletHolder.java:561)
+! at org.eclipse.jetty.servlet.ServletHolder.initialize(ServletHolder.java:349)
+! at org.eclipse.jetty.servlet.ServletHandler.initialize(ServletHandler.java:812)
+! at org.eclipse.jetty.servlet.ServletContextHandler.startContext(ServletContextHandler.java:288)
+! at org.eclipse.jetty.server.handler.ContextHandler.doStart(ContextHandler.java:732)
+! at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:69)
+! at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:118)
+! at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:100)
+! at org.eclipse.jetty.server.handler.AbstractHandler.doStart(AbstractHandler.java:60)
+! at com.codahale.metrics.jetty9.InstrumentedHandler.doStart(InstrumentedHandler.java:92)
+! at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:69)
+! at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:118)
+! at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:100)
+! at org.eclipse.jetty.server.handler.AbstractHandler.doStart(AbstractHandler.java:60)
+! at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:69)
+! at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:118)
+! at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:100)
+! at org.eclipse.jetty.server.handler.AbstractHandler.doStart(AbstractHandler.java:60)
+! at org.eclipse.jetty.server.handler.RequestLogHandler.doStart(RequestLogHandler.java:131)
+! at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:69)
+! at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:118)
+! at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:100)
+! at org.eclipse.jetty.server.handler.AbstractHandler.doStart(AbstractHandler.java:60)
+! at org.eclipse.jetty.server.handler.StatisticsHandler.doStart(StatisticsHandler.java:233)
+! at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:69)
+! at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:118)
+! at org.eclipse.jetty.server.Server.start(Server.java:342)
+! at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:100)
+! at org.eclipse.jetty.server.handler.AbstractHandler.doStart(AbstractHandler.java:60)
+! at org.eclipse.jetty.server.Server.doStart(Server.java:290)
+! at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:69)
+! at io.dropwizard.cli.ServerCommand.run(ServerCommand.java:43)
+! at io.dropwizard.cli.EnvironmentCommand.run(EnvironmentCommand.java:43)
+! at io.dropwizard.cli.ConfiguredCommand.run(ConfiguredCommand.java:76)
+! at io.dropwizard.cli.Cli.run(Cli.java:70)
+! at io.dropwizard.Application.run(Application.java:72)
+! at woolly.WoollyService.main(WoollyService.java:33)
+! Caused by: com.sun.jersey.api.container.ContainerException: The ResourceConfig instance does not contain any root resource classes.
+! at com.sun.jersey.server.impl.application.RootResourceUriRules.<init>(RootResourceUriRules.java:99)
+! at com.sun.jersey.server.impl.application.WebApplicationImpl._initiate(WebApplicationImpl.java:1359)
+! at com.sun.jersey.server.impl.application.WebApplicationImpl.access$700(WebApplicationImpl.java:180)
+! at com.sun.jersey.server.impl.application.WebApplicationImpl$13.f(WebApplicationImpl.java:799)
+! at com.sun.jersey.server.impl.application.WebApplicationImpl$13.f(WebApplicationImpl.java:795)
+! at com.sun.jersey.spi.inject.Errors.processWithErrors(Errors.java:193)
+! at com.sun.jersey.server.impl.application.WebApplicationImpl.initiate(WebApplicationImpl.java:795)
+! at com.hubspot.dropwizard.guice.GuiceContainer.initiate(GuiceContainer.java:70)
+! at com.sun.jersey.spi.container.servlet.ServletContainer$InternalWebComponent.initiate(ServletContainer.java:321)
+! at com.sun.jersey.spi.container.servlet.WebComponent.load(WebComponent.java:605)
+! at com.sun.jersey.spi.container.servlet.WebComponent.init(WebComponent.java:207)
+! at com.sun.jersey.spi.container.servlet.ServletContainer.init(ServletContainer.java:376)
+! at com.sun.jersey.spi.container.servlet.ServletContainer.init(ServletContainer.java:559)
+! at javax.servlet.GenericServlet.init(GenericServlet.java:244)
+! at org.eclipse.jetty.servlet.ServletHolder.initServlet(ServletHolder.java:540)
+! ... 36 common frames omitted
+WARN  [2015-04-18 11:33:39,984] [ ] org.eclipse.jetty.util.component.AbstractLifeCycle: FAILED io.dropwizard.jetty.RoutingHandler@1192b58e: javax.servlet.ServletException: com.hubspot.dropwizard.guice.GuiceContainer-44b194fe@39dc8911==com.hubspot.dropwizard.guice.GuiceContainer,1,false
+! javax.servlet.ServletException: com.hubspot.dropwizard.guice.GuiceContainer-44b194fe@39dc8911==com.hubspot.dropwizard.guice.GuiceContainer,1,false
+! at org.eclipse.jetty.servlet.ServletHolder.initServlet(ServletHolder.java:561)
+! at org.eclipse.jetty.servlet.ServletHolder.initialize(ServletHolder.java:349)
+! at org.eclipse.jetty.servlet.ServletHandler.initialize(ServletHandler.java:812)
+! at org.eclipse.jetty.servlet.ServletContextHandler.startContext(ServletContextHandler.java:288)
+! at org.eclipse.jetty.server.handler.ContextHandler.doStart(ContextHandler.java:732)
+! at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:69)
+! at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:118)
+! at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:100)
+! at org.eclipse.jetty.server.handler.AbstractHandler.doStart(AbstractHandler.java:60)
+! at com.codahale.metrics.jetty9.InstrumentedHandler.doStart(InstrumentedHandler.java:92)
+! at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:69)
+! at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:118)
+! at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:100)
+! at org.eclipse.jetty.server.handler.AbstractHandler.doStart(AbstractHandler.java:60)
+! at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:69)
+! at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:118)
+! at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:100)
+! at org.eclipse.jetty.server.handler.AbstractHandler.doStart(AbstractHandler.java:60)
+! at org.eclipse.jetty.server.handler.RequestLogHandler.doStart(RequestLogHandler.java:131)
+! at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:69)
+! at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:118)
+! at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:100)
+! at org.eclipse.jetty.server.handler.AbstractHandler.doStart(AbstractHandler.java:60)
+! at org.eclipse.jetty.server.handler.StatisticsHandler.doStart(StatisticsHandler.java:233)
+! at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:69)
+! at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:118)
+! at org.eclipse.jetty.server.Server.start(Server.java:342)
+! at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:100)
+! at org.eclipse.jetty.server.handler.AbstractHandler.doStart(AbstractHandler.java:60)
+! at org.eclipse.jetty.server.Server.doStart(Server.java:290)
+! at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:69)
+! at io.dropwizard.cli.ServerCommand.run(ServerCommand.java:43)
+! at io.dropwizard.cli.EnvironmentCommand.run(EnvironmentCommand.java:43)
+! at io.dropwizard.cli.ConfiguredCommand.run(ConfiguredCommand.java:76)
+! at io.dropwizard.cli.Cli.run(Cli.java:70)
+! at io.dropwizard.Application.run(Application.java:72)
+! at woolly.WoollyService.main(WoollyService.java:33)
+! Caused by: com.sun.jersey.api.container.ContainerException: The ResourceConfig instance does not contain any root resource classes.
+! at com.sun.jersey.server.impl.application.RootResourceUriRules.<init>(RootResourceUriRules.java:99)
+! at com.sun.jersey.server.impl.application.WebApplicationImpl._initiate(WebApplicationImpl.java:1359)
+! at com.sun.jersey.server.impl.application.WebApplicationImpl.access$700(WebApplicationImpl.java:180)
+! at com.sun.jersey.server.impl.application.WebApplicationImpl$13.f(WebApplicationImpl.java:799)
+! at com.sun.jersey.server.impl.application.WebApplicationImpl$13.f(WebApplicationImpl.java:795)
+! at com.sun.jersey.spi.inject.Errors.processWithErrors(Errors.java:193)
+! at com.sun.jersey.server.impl.application.WebApplicationImpl.initiate(WebApplicationImpl.java:795)
+! at com.hubspot.dropwizard.guice.GuiceContainer.initiate(GuiceContainer.java:70)
+! at com.sun.jersey.spi.container.servlet.ServletContainer$InternalWebComponent.initiate(ServletContainer.java:321)
+! at com.sun.jersey.spi.container.servlet.WebComponent.load(WebComponent.java:605)
+! at com.sun.jersey.spi.container.servlet.WebComponent.init(WebComponent.java:207)
+! at com.sun.jersey.spi.container.servlet.ServletContainer.init(ServletContainer.java:376)
+! at com.sun.jersey.spi.container.servlet.ServletContainer.init(ServletContainer.java:559)
+! at javax.servlet.GenericServlet.init(GenericServlet.java:244)
+! at org.eclipse.jetty.servlet.ServletHolder.initServlet(ServletHolder.java:540)
+! ... 36 common frames omitted
+WARN  [2015-04-18 11:33:39,985] [ ] org.eclipse.jetty.util.component.AbstractLifeCycle: FAILED org.eclipse.jetty.server.handler.RequestLogHandler@4f8d86e4: javax.servlet.ServletException: com.hubspot.dropwizard.guice.GuiceContainer-44b194fe@39dc8911==com.hubspot.dropwizard.guice.GuiceContainer,1,false
+! javax.servlet.ServletException: com.hubspot.dropwizard.guice.GuiceContainer-44b194fe@39dc8911==com.hubspot.dropwizard.guice.GuiceContainer,1,false
+! at org.eclipse.jetty.servlet.ServletHolder.initServlet(ServletHolder.java:561)
+! at org.eclipse.jetty.servlet.ServletHolder.initialize(ServletHolder.java:349)
+! at org.eclipse.jetty.servlet.ServletHandler.initialize(ServletHandler.java:812)
+! at org.eclipse.jetty.servlet.ServletContextHandler.startContext(ServletContextHandler.java:288)
+! at org.eclipse.jetty.server.handler.ContextHandler.doStart(ContextHandler.java:732)
+! at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:69)
+! at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:118)
+! at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:100)
+! at org.eclipse.jetty.server.handler.AbstractHandler.doStart(AbstractHandler.java:60)
+! at com.codahale.metrics.jetty9.InstrumentedHandler.doStart(InstrumentedHandler.java:92)
+! at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:69)
+! at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:118)
+! at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:100)
+! at org.eclipse.jetty.server.handler.AbstractHandler.doStart(AbstractHandler.java:60)
+! at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:69)
+! at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:118)
+! at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:100)
+! at org.eclipse.jetty.server.handler.AbstractHandler.doStart(AbstractHandler.java:60)
+! at org.eclipse.jetty.server.handler.RequestLogHandler.doStart(RequestLogHandler.java:131)
+! at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:69)
+! at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:118)
+! at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:100)
+! at org.eclipse.jetty.server.handler.AbstractHandler.doStart(AbstractHandler.java:60)
+! at org.eclipse.jetty.server.handler.StatisticsHandler.doStart(StatisticsHandler.java:233)
+! at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:69)
+! at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:118)
+! at org.eclipse.jetty.server.Server.start(Server.java:342)
+! at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:100)
+! at org.eclipse.jetty.server.handler.AbstractHandler.doStart(AbstractHandler.java:60)
+! at org.eclipse.jetty.server.Server.doStart(Server.java:290)
+! at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:69)
+! at io.dropwizard.cli.ServerCommand.run(ServerCommand.java:43)
+! at io.dropwizard.cli.EnvironmentCommand.run(EnvironmentCommand.java:43)
+! at io.dropwizard.cli.ConfiguredCommand.run(ConfiguredCommand.java:76)
+! at io.dropwizard.cli.Cli.run(Cli.java:70)
+! at io.dropwizard.Application.run(Application.java:72)
+! at woolly.WoollyService.main(WoollyService.java:33)
+! Caused by: com.sun.jersey.api.container.ContainerException: The ResourceConfig instance does not contain any root resource classes.
+! at com.sun.jersey.server.impl.application.RootResourceUriRules.<init>(RootResourceUriRules.java:99)
+! at com.sun.jersey.server.impl.application.WebApplicationImpl._initiate(WebApplicationImpl.java:1359)
+! at com.sun.jersey.server.impl.application.WebApplicationImpl.access$700(WebApplicationImpl.java:180)
+! at com.sun.jersey.server.impl.application.WebApplicationImpl$13.f(WebApplicationImpl.java:799)
+! at com.sun.jersey.server.impl.application.WebApplicationImpl$13.f(WebApplicationImpl.java:795)
+! at com.sun.jersey.spi.inject.Errors.processWithErrors(Errors.java:193)
+! at com.sun.jersey.server.impl.application.WebApplicationImpl.initiate(WebApplicationImpl.java:795)
+! at com.hubspot.dropwizard.guice.GuiceContainer.initiate(GuiceContainer.java:70)
+! at com.sun.jersey.spi.container.servlet.ServletContainer$InternalWebComponent.initiate(ServletContainer.java:321)
+! at com.sun.jersey.spi.container.servlet.WebComponent.load(WebComponent.java:605)
+! at com.sun.jersey.spi.container.servlet.WebComponent.init(WebComponent.java:207)
+! at com.sun.jersey.spi.container.servlet.ServletContainer.init(ServletContainer.java:376)
+! at com.sun.jersey.spi.container.servlet.ServletContainer.init(ServletContainer.java:559)
+! at javax.servlet.GenericServlet.init(GenericServlet.java:244)
+! at org.eclipse.jetty.servlet.ServletHolder.initServlet(ServletHolder.java:540)
+! ... 36 common frames omitted
+WARN  [2015-04-18 11:33:39,986] [ ] org.eclipse.jetty.util.component.AbstractLifeCycle: FAILED org.eclipse.jetty.server.handler.StatisticsHandler@5f631ca0: javax.servlet.ServletException: com.hubspot.dropwizard.guice.GuiceContainer-44b194fe@39dc8911==com.hubspot.dropwizard.guice.GuiceContainer,1,false
+! javax.servlet.ServletException: com.hubspot.dropwizard.guice.GuiceContainer-44b194fe@39dc8911==com.hubspot.dropwizard.guice.GuiceContainer,1,false
+! at org.eclipse.jetty.servlet.ServletHolder.initServlet(ServletHolder.java:561)
+! at org.eclipse.jetty.servlet.ServletHolder.initialize(ServletHolder.java:349)
+! at org.eclipse.jetty.servlet.ServletHandler.initialize(ServletHandler.java:812)
+! at org.eclipse.jetty.servlet.ServletContextHandler.startContext(ServletContextHandler.java:288)
+! at org.eclipse.jetty.server.handler.ContextHandler.doStart(ContextHandler.java:732)
+! at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:69)
+! at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:118)
+! at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:100)
+! at org.eclipse.jetty.server.handler.AbstractHandler.doStart(AbstractHandler.java:60)
+! at com.codahale.metrics.jetty9.InstrumentedHandler.doStart(InstrumentedHandler.java:92)
+! at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:69)
+! at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:118)
+! at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:100)
+! at org.eclipse.jetty.server.handler.AbstractHandler.doStart(AbstractHandler.java:60)
+! at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:69)
+! at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:118)
+! at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:100)
+! at org.eclipse.jetty.server.handler.AbstractHandler.doStart(AbstractHandler.java:60)
+! at org.eclipse.jetty.server.handler.RequestLogHandler.doStart(RequestLogHandler.java:131)
+! at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:69)
+! at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:118)
+! at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:100)
+! at org.eclipse.jetty.server.handler.AbstractHandler.doStart(AbstractHandler.java:60)
+! at org.eclipse.jetty.server.handler.StatisticsHandler.doStart(StatisticsHandler.java:233)
+! at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:69)
+! at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:118)
+! at org.eclipse.jetty.server.Server.start(Server.java:342)
+! at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:100)
+! at org.eclipse.jetty.server.handler.AbstractHandler.doStart(AbstractHandler.java:60)
+! at org.eclipse.jetty.server.Server.doStart(Server.java:290)
+! at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:69)
+! at io.dropwizard.cli.ServerCommand.run(ServerCommand.java:43)
+! at io.dropwizard.cli.EnvironmentCommand.run(EnvironmentCommand.java:43)
+! at io.dropwizard.cli.ConfiguredCommand.run(ConfiguredCommand.java:76)
+! at io.dropwizard.cli.Cli.run(Cli.java:70)
+! at io.dropwizard.Application.run(Application.java:72)
+! at woolly.WoollyService.main(WoollyService.java:33)
+! Caused by: com.sun.jersey.api.container.ContainerException: The ResourceConfig instance does not contain any root resource classes.
+! at com.sun.jersey.server.impl.application.RootResourceUriRules.<init>(RootResourceUriRules.java:99)
+! at com.sun.jersey.server.impl.application.WebApplicationImpl._initiate(WebApplicationImpl.java:1359)
+! at com.sun.jersey.server.impl.application.WebApplicationImpl.access$700(WebApplicationImpl.java:180)
+! at com.sun.jersey.server.impl.application.WebApplicationImpl$13.f(WebApplicationImpl.java:799)
+! at com.sun.jersey.server.impl.application.WebApplicationImpl$13.f(WebApplicationImpl.java:795)
+! at com.sun.jersey.spi.inject.Errors.processWithErrors(Errors.java:193)
+! at com.sun.jersey.server.impl.application.WebApplicationImpl.initiate(WebApplicationImpl.java:795)
+! at com.hubspot.dropwizard.guice.GuiceContainer.initiate(GuiceContainer.java:70)
+! at com.sun.jersey.spi.container.servlet.ServletContainer$InternalWebComponent.initiate(ServletContainer.java:321)
+! at com.sun.jersey.spi.container.servlet.WebComponent.load(WebComponent.java:605)
+! at com.sun.jersey.spi.container.servlet.WebComponent.init(WebComponent.java:207)
+! at com.sun.jersey.spi.container.servlet.ServletContainer.init(ServletContainer.java:376)
+! at com.sun.jersey.spi.container.servlet.ServletContainer.init(ServletContainer.java:559)
+! at javax.servlet.GenericServlet.init(GenericServlet.java:244)
+! at org.eclipse.jetty.servlet.ServletHolder.initServlet(ServletHolder.java:540)
+! ... 36 common frames omitted
+WARN  [2015-04-18 11:33:39,988] [ ] org.eclipse.jetty.util.component.AbstractLifeCycle: FAILED org.eclipse.jetty.server.Server@1697f2b3: javax.servlet.ServletException: com.hubspot.dropwizard.guice.GuiceContainer-44b194fe@39dc8911==com.hubspot.dropwizard.guice.GuiceContainer,1,false
+! javax.servlet.ServletException: com.hubspot.dropwizard.guice.GuiceContainer-44b194fe@39dc8911==com.hubspot.dropwizard.guice.GuiceContainer,1,false
+! at org.eclipse.jetty.servlet.ServletHolder.initServlet(ServletHolder.java:561)
+! at org.eclipse.jetty.servlet.ServletHolder.initialize(ServletHolder.java:349)
+! at org.eclipse.jetty.servlet.ServletHandler.initialize(ServletHandler.java:812)
+! at org.eclipse.jetty.servlet.ServletContextHandler.startContext(ServletContextHandler.java:288)
+! at org.eclipse.jetty.server.handler.ContextHandler.doStart(ContextHandler.java:732)
+! at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:69)
+! at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:118)
+! at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:100)
+! at org.eclipse.jetty.server.handler.AbstractHandler.doStart(AbstractHandler.java:60)
+! at com.codahale.metrics.jetty9.InstrumentedHandler.doStart(InstrumentedHandler.java:92)
+! at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:69)
+! at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:118)
+! at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:100)
+! at org.eclipse.jetty.server.handler.AbstractHandler.doStart(AbstractHandler.java:60)
+! at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:69)
+! at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:118)
+! at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:100)
+! at org.eclipse.jetty.server.handler.AbstractHandler.doStart(AbstractHandler.java:60)
+! at org.eclipse.jetty.server.handler.RequestLogHandler.doStart(RequestLogHandler.java:131)
+! at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:69)
+! at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:118)
+! at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:100)
+! at org.eclipse.jetty.server.handler.AbstractHandler.doStart(AbstractHandler.java:60)
+! at org.eclipse.jetty.server.handler.StatisticsHandler.doStart(StatisticsHandler.java:233)
+! at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:69)
+! at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:118)
+! at org.eclipse.jetty.server.Server.start(Server.java:342)
+! at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:100)
+! at org.eclipse.jetty.server.handler.AbstractHandler.doStart(AbstractHandler.java:60)
+! at org.eclipse.jetty.server.Server.doStart(Server.java:290)
+! at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:69)
+! at io.dropwizard.cli.ServerCommand.run(ServerCommand.java:43)
+! at io.dropwizard.cli.EnvironmentCommand.run(EnvironmentCommand.java:43)
+! at io.dropwizard.cli.ConfiguredCommand.run(ConfiguredCommand.java:76)
+! at io.dropwizard.cli.Cli.run(Cli.java:70)
+! at io.dropwizard.Application.run(Application.java:72)
+! at woolly.WoollyService.main(WoollyService.java:33)
+! Caused by: com.sun.jersey.api.container.ContainerException: The ResourceConfig instance does not contain any root resource classes.
+! at com.sun.jersey.server.impl.application.RootResourceUriRules.<init>(RootResourceUriRules.java:99)
+! at com.sun.jersey.server.impl.application.WebApplicationImpl._initiate(WebApplicationImpl.java:1359)
+! at com.sun.jersey.server.impl.application.WebApplicationImpl.access$700(WebApplicationImpl.java:180)
+! at com.sun.jersey.server.impl.application.WebApplicationImpl$13.f(WebApplicationImpl.java:799)
+! at com.sun.jersey.server.impl.application.WebApplicationImpl$13.f(WebApplicationImpl.java:795)
+! at com.sun.jersey.spi.inject.Errors.processWithErrors(Errors.java:193)
+! at com.sun.jersey.server.impl.application.WebApplicationImpl.initiate(WebApplicationImpl.java:795)
+! at com.hubspot.dropwizard.guice.GuiceContainer.initiate(GuiceContainer.java:70)
+! at com.sun.jersey.spi.container.servlet.ServletContainer$InternalWebComponent.initiate(ServletContainer.java:321)
+! at com.sun.jersey.spi.container.servlet.WebComponent.load(WebComponent.java:605)
+! at com.sun.jersey.spi.container.servlet.WebComponent.init(WebComponent.java:207)
+! at com.sun.jersey.spi.container.servlet.ServletContainer.init(ServletContainer.java:376)
+! at com.sun.jersey.spi.container.servlet.ServletContainer.init(ServletContainer.java:559)
+! at javax.servlet.GenericServlet.init(GenericServlet.java:244)
+! at org.eclipse.jetty.servlet.ServletHolder.initServlet(ServletHolder.java:540)
+! ... 36 common frames omitted
+ERROR [2015-04-18 11:33:39,989] [ ] io.dropwizard.cli.ServerCommand: Unable to start server, shutting down
+! javax.servlet.ServletException: com.hubspot.dropwizard.guice.GuiceContainer-44b194fe@39dc8911==com.hubspot.dropwizard.guice.GuiceContainer,1,false
+! at org.eclipse.jetty.servlet.ServletHolder.initServlet(ServletHolder.java:561)
+! at org.eclipse.jetty.servlet.ServletHolder.initialize(ServletHolder.java:349)
+! at org.eclipse.jetty.servlet.ServletHandler.initialize(ServletHandler.java:812)
+! at org.eclipse.jetty.servlet.ServletContextHandler.startContext(ServletContextHandler.java:288)
+! at org.eclipse.jetty.server.handler.ContextHandler.doStart(ContextHandler.java:732)
+! at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:69)
+! at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:118)
+! at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:100)
+! at org.eclipse.jetty.server.handler.AbstractHandler.doStart(AbstractHandler.java:60)
+! at com.codahale.metrics.jetty9.InstrumentedHandler.doStart(InstrumentedHandler.java:92)
+! at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:69)
+! at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:118)
+! at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:100)
+! at org.eclipse.jetty.server.handler.AbstractHandler.doStart(AbstractHandler.java:60)
+! at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:69)
+! at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:118)
+! at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:100)
+! at org.eclipse.jetty.server.handler.AbstractHandler.doStart(AbstractHandler.java:60)
+! at org.eclipse.jetty.server.handler.RequestLogHandler.doStart(RequestLogHandler.java:131)
+! at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:69)
+! at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:118)
+! at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:100)
+! at org.eclipse.jetty.server.handler.AbstractHandler.doStart(AbstractHandler.java:60)
+! at org.eclipse.jetty.server.handler.StatisticsHandler.doStart(StatisticsHandler.java:233)
+! at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:69)
+! at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:118)
+! at org.eclipse.jetty.server.Server.start(Server.java:342)
+! at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:100)
+! at org.eclipse.jetty.server.handler.AbstractHandler.doStart(AbstractHandler.java:60)
+! at org.eclipse.jetty.server.Server.doStart(Server.java:290)
+! at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:69)
+! at io.dropwizard.cli.ServerCommand.run(ServerCommand.java:43)
+! at io.dropwizard.cli.EnvironmentCommand.run(EnvironmentCommand.java:43)
+! at io.dropwizard.cli.ConfiguredCommand.run(ConfiguredCommand.java:76)
+! at io.dropwizard.cli.Cli.run(Cli.java:70)
+! at io.dropwizard.Application.run(Application.java:72)
+! at woolly.WoollyService.main(WoollyService.java:33)
+! Caused by: com.sun.jersey.api.container.ContainerException: The ResourceConfig instance does not contain any root resource classes.
+! at com.sun.jersey.server.impl.application.RootResourceUriRules.<init>(RootResourceUriRules.java:99)
+! at com.sun.jersey.server.impl.application.WebApplicationImpl._initiate(WebApplicationImpl.java:1359)
+! at com.sun.jersey.server.impl.application.WebApplicationImpl.access$700(WebApplicationImpl.java:180)
+! at com.sun.jersey.server.impl.application.WebApplicationImpl$13.f(WebApplicationImpl.java:799)
+! at com.sun.jersey.server.impl.application.WebApplicationImpl$13.f(WebApplicationImpl.java:795)
+! at com.sun.jersey.spi.inject.Errors.processWithErrors(Errors.java:193)
+! at com.sun.jersey.server.impl.application.WebApplicationImpl.initiate(WebApplicationImpl.java:795)
+! at com.hubspot.dropwizard.guice.GuiceContainer.initiate(GuiceContainer.java:70)
+! at com.sun.jersey.spi.container.servlet.ServletContainer$InternalWebComponent.initiate(ServletContainer.java:321)
+! at com.sun.jersey.spi.container.servlet.WebComponent.load(WebComponent.java:605)
+! at com.sun.jersey.spi.container.servlet.WebComponent.init(WebComponent.java:207)
+! at com.sun.jersey.spi.container.servlet.ServletContainer.init(ServletContainer.java:376)
+! at com.sun.jersey.spi.container.servlet.ServletContainer.init(ServletContainer.java:559)
+! at javax.servlet.GenericServlet.init(GenericServlet.java:244)
+! at org.eclipse.jetty.servlet.ServletHolder.initServlet(ServletHolder.java:540)
+! ... 36 common frames omitted
+INFO  [2015-04-18 11:36:07,410] [ ] io.dropwizard.server.ServerFactory: Starting WoollyService
+INFO  [2015-04-18 11:36:07,647] [ ] org.eclipse.jetty.setuid.SetUIDListener: Opened application@9596ce8{HTTP/1.1}{0.0.0.0:26000}
+INFO  [2015-04-18 11:36:07,648] [ ] org.eclipse.jetty.setuid.SetUIDListener: Opened admin@75ae4a1f{HTTP/1.1}{0.0.0.0:26001}
+INFO  [2015-04-18 11:36:07,655] [ ] org.eclipse.jetty.server.Server: jetty-9.0.7.v20131107
+INFO  [2015-04-18 11:36:07,865] [ ] com.sun.jersey.guice.spi.container.GuiceComponentProviderFactory: Registering woolly.resource.TestResource as a root resource class
+INFO  [2015-04-18 11:36:07,868] [ ] com.sun.jersey.server.impl.application.WebApplicationImpl: Initiating Jersey application, version 'Jersey: 1.18.1 02/19/2014 03:28 AM'
+INFO  [2015-04-18 11:36:08,064] [ ] io.dropwizard.jersey.DropwizardResourceConfig: The following paths were found for the configured resources:
+
+    GET     /v1/test (woolly.resource.TestResource)
+
+INFO  [2015-04-18 11:36:08,645] [ ] com.sun.jersey.guice.spi.container.GuiceComponentProviderFactory: Binding woolly.resource.TestResource to GuiceManagedComponentProvider with the scope "Singleton"
+INFO  [2015-04-18 11:36:08,666] [ ] org.eclipse.jetty.server.handler.ContextHandler: Started i.d.j.MutableServletContextHandler@2577a95d{/,null,AVAILABLE}
+INFO  [2015-04-18 11:36:08,671] [ ] io.dropwizard.setup.AdminEnvironment: tasks = 
+
+    POST    /tasks/gc (io.dropwizard.servlets.tasks.GarbageCollectionTask)
+
+WARN  [2015-04-18 11:36:08,672] [ ] io.dropwizard.setup.AdminEnvironment: 
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!    THIS APPLICATION HAS NO HEALTHCHECKS. THIS MEANS YOU WILL NEVER KNOW      !
+!     IF IT DIES IN PRODUCTION, WHICH MEANS YOU WILL NEVER KNOW IF YOU'RE      !
+!    LETTING YOUR USERS DOWN. YOU SHOULD ADD A HEALTHCHECK FOR EACH OF YOUR    !
+!         APPLICATION'S DEPENDENCIES WHICH FULLY (BUT LIGHTLY) TESTS IT.       !
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+INFO  [2015-04-18 11:36:08,678] [ ] org.eclipse.jetty.server.handler.ContextHandler: Started i.d.j.MutableServletContextHandler@11d045b4{/,null,AVAILABLE}
+INFO  [2015-04-18 11:36:08,689] [ ] org.eclipse.jetty.server.ServerConnector: Started application@9596ce8{HTTP/1.1}{0.0.0.0:26000}
+INFO  [2015-04-18 11:36:08,692] [ ] org.eclipse.jetty.server.ServerConnector: Started admin@75ae4a1f{HTTP/1.1}{0.0.0.0:26001}
+ERROR [2015-04-18 11:37:25,327] [REQ-a11eba5a-960f-4659-a282-73708dbe17d3 TXN-c0809dd8-dd58-46dd-bf1d-279f8d506875] io.dropwizard.jersey.errors.LoggingExceptionMapper: Error handling a request: b0993a690962f006
+! java.lang.NullPointerException: null
+! at com.google.inject.persist.jpa.JpaPersistService.begin(JpaPersistService.java:70)
+! at com.google.inject.persist.jpa.JpaLocalTxnInterceptor.invoke(JpaLocalTxnInterceptor.java:49)
+! at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+! at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+! at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+! at java.lang.reflect.Method.invoke(Method.java:497)
+! at com.sun.jersey.spi.container.JavaMethodInvokerFactory$1.invoke(JavaMethodInvokerFactory.java:60)
+! at com.sun.jersey.server.impl.model.method.dispatch.AbstractResourceMethodDispatchProvider$ResponseOutInvoker._dispatch(AbstractResourceMethodDispatchProvider.java:205)
+! at com.sun.jersey.server.impl.model.method.dispatch.ResourceJavaMethodDispatcher.dispatch(ResourceJavaMethodDispatcher.java:75)
+! at com.codahale.metrics.jersey.InstrumentedResourceMethodDispatchProvider$TimedRequestDispatcher.dispatch(InstrumentedResourceMethodDispatchProvider.java:30)
+! at io.dropwizard.jersey.guava.OptionalResourceMethodDispatchAdapter$OptionalRequestDispatcher.dispatch(OptionalResourceMethodDispatchAdapter.java:37)
+! at com.sun.jersey.server.impl.uri.rules.HttpMethodRule.accept(HttpMethodRule.java:302)
+! at com.sun.jersey.server.impl.uri.rules.ResourceClassRule.accept(ResourceClassRule.java:108)
+! at com.sun.jersey.server.impl.uri.rules.RightHandPathRule.accept(RightHandPathRule.java:147)
+! at com.sun.jersey.server.impl.uri.rules.RootResourceClassesRule.accept(RootResourceClassesRule.java:84)
+! at com.sun.jersey.server.impl.application.WebApplicationImpl._handleRequest(WebApplicationImpl.java:1542)
+! at com.sun.jersey.server.impl.application.WebApplicationImpl._handleRequest(WebApplicationImpl.java:1473)
+! at com.sun.jersey.server.impl.application.WebApplicationImpl.handleRequest(WebApplicationImpl.java:1419)
+! at com.sun.jersey.server.impl.application.WebApplicationImpl.handleRequest(WebApplicationImpl.java:1409)
+! at com.sun.jersey.spi.container.servlet.WebComponent.service(WebComponent.java:409)
+! at com.sun.jersey.spi.container.servlet.ServletContainer.service(ServletContainer.java:540)
+! at com.sun.jersey.spi.container.servlet.ServletContainer.service(ServletContainer.java:715)
+! at javax.servlet.http.HttpServlet.service(HttpServlet.java:848)
+! at io.dropwizard.jetty.NonblockingServletHolder.handle(NonblockingServletHolder.java:49)
+! at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1515)
+! at org.eclipse.jetty.servlets.UserAgentFilter.doFilter(UserAgentFilter.java:83)
+! at org.eclipse.jetty.servlets.GzipFilter.doFilter(GzipFilter.java:348)
+! at io.dropwizard.jetty.BiDiGzipFilter.doFilter(BiDiGzipFilter.java:127)
+! at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1486)
+! at io.dropwizard.servlets.ThreadNameFilter.doFilter(ThreadNameFilter.java:29)
+! at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1486)
+! at io.dropwizard.jersey.filter.AllowedMethodsFilter.handle(AllowedMethodsFilter.java:44)
+! at io.dropwizard.jersey.filter.AllowedMethodsFilter.doFilter(AllowedMethodsFilter.java:39)
+! at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1486)
+! at fk.sp.common.extensions.RequestContextFilter.doFilter(RequestContextFilter.java:53)
+! at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1486)
+! at fk.sp.common.extensions.RequestContextFilter.doFilter(RequestContextFilter.java:53)
+! at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1486)
+! at com.google.inject.servlet.FilterChainInvocation.doFilter(FilterChainInvocation.java:66)
+! at com.google.inject.servlet.ManagedFilterPipeline.dispatch(ManagedFilterPipeline.java:118)
+! at com.google.inject.servlet.GuiceFilter.doFilter(GuiceFilter.java:113)
+! at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1486)
+! at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:519)
+! at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1097)
+! at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:448)
+! at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1031)
+! at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:136)
+! at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:97)
+! at com.codahale.metrics.jetty9.InstrumentedHandler.handle(InstrumentedHandler.java:175)
+! at io.dropwizard.jetty.RoutingHandler.handle(RoutingHandler.java:51)
+! at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:97)
+! at org.eclipse.jetty.server.handler.RequestLogHandler.handle(RequestLogHandler.java:92)
+! at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:97)
+! at org.eclipse.jetty.server.handler.StatisticsHandler.handle(StatisticsHandler.java:162)
+! at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:97)
+! at org.eclipse.jetty.server.Server.handle(Server.java:446)
+! at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:271)
+! at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:246)
+! at org.eclipse.jetty.io.AbstractConnection$ReadCallback.run(AbstractConnection.java:358)
+! at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:601)
+! at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:532)
+! at java.lang.Thread.run(Thread.java:745)
+ERROR [2015-04-18 11:40:47,619] [REQ-cfb221dc-26ce-4cb3-a542-4844786a2c02 TXN-82369551-944d-4726-b2b0-d0dc367d3b5d] io.dropwizard.jersey.errors.LoggingExceptionMapper: Error handling a request: 5991bac948b0b53d
+! java.lang.NullPointerException: null
+! at com.google.inject.persist.jpa.JpaPersistService.begin(JpaPersistService.java:70)
+! at com.google.inject.persist.jpa.JpaLocalTxnInterceptor.invoke(JpaLocalTxnInterceptor.java:49)
+! at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+! at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+! at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+! at java.lang.reflect.Method.invoke(Method.java:497)
+! at com.sun.jersey.spi.container.JavaMethodInvokerFactory$1.invoke(JavaMethodInvokerFactory.java:60)
+! at com.sun.jersey.server.impl.model.method.dispatch.AbstractResourceMethodDispatchProvider$ResponseOutInvoker._dispatch(AbstractResourceMethodDispatchProvider.java:205)
+! at com.sun.jersey.server.impl.model.method.dispatch.ResourceJavaMethodDispatcher.dispatch(ResourceJavaMethodDispatcher.java:75)
+! at com.codahale.metrics.jersey.InstrumentedResourceMethodDispatchProvider$TimedRequestDispatcher.dispatch(InstrumentedResourceMethodDispatchProvider.java:30)
+! at io.dropwizard.jersey.guava.OptionalResourceMethodDispatchAdapter$OptionalRequestDispatcher.dispatch(OptionalResourceMethodDispatchAdapter.java:37)
+! at com.sun.jersey.server.impl.uri.rules.HttpMethodRule.accept(HttpMethodRule.java:302)
+! at com.sun.jersey.server.impl.uri.rules.ResourceClassRule.accept(ResourceClassRule.java:108)
+! at com.sun.jersey.server.impl.uri.rules.RightHandPathRule.accept(RightHandPathRule.java:147)
+! at com.sun.jersey.server.impl.uri.rules.RootResourceClassesRule.accept(RootResourceClassesRule.java:84)
+! at com.sun.jersey.server.impl.application.WebApplicationImpl._handleRequest(WebApplicationImpl.java:1542)
+! at com.sun.jersey.server.impl.application.WebApplicationImpl._handleRequest(WebApplicationImpl.java:1473)
+! at com.sun.jersey.server.impl.application.WebApplicationImpl.handleRequest(WebApplicationImpl.java:1419)
+! at com.sun.jersey.server.impl.application.WebApplicationImpl.handleRequest(WebApplicationImpl.java:1409)
+! at com.sun.jersey.spi.container.servlet.WebComponent.service(WebComponent.java:409)
+! at com.sun.jersey.spi.container.servlet.ServletContainer.service(ServletContainer.java:540)
+! at com.sun.jersey.spi.container.servlet.ServletContainer.service(ServletContainer.java:715)
+! at javax.servlet.http.HttpServlet.service(HttpServlet.java:848)
+! at io.dropwizard.jetty.NonblockingServletHolder.handle(NonblockingServletHolder.java:49)
+! at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1515)
+! at org.eclipse.jetty.servlets.UserAgentFilter.doFilter(UserAgentFilter.java:83)
+! at org.eclipse.jetty.servlets.GzipFilter.doFilter(GzipFilter.java:348)
+! at io.dropwizard.jetty.BiDiGzipFilter.doFilter(BiDiGzipFilter.java:127)
+! at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1486)
+! at io.dropwizard.servlets.ThreadNameFilter.doFilter(ThreadNameFilter.java:29)
+! at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1486)
+! at io.dropwizard.jersey.filter.AllowedMethodsFilter.handle(AllowedMethodsFilter.java:44)
+! at io.dropwizard.jersey.filter.AllowedMethodsFilter.doFilter(AllowedMethodsFilter.java:39)
+! at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1486)
+! at fk.sp.common.extensions.RequestContextFilter.doFilter(RequestContextFilter.java:53)
+! at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1486)
+! at fk.sp.common.extensions.RequestContextFilter.doFilter(RequestContextFilter.java:53)
+! at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1486)
+! at com.google.inject.servlet.FilterChainInvocation.doFilter(FilterChainInvocation.java:66)
+! at com.google.inject.servlet.ManagedFilterPipeline.dispatch(ManagedFilterPipeline.java:118)
+! at com.google.inject.servlet.GuiceFilter.doFilter(GuiceFilter.java:113)
+! at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1486)
+! at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:519)
+! at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1097)
+! at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:448)
+! at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1031)
+! at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:136)
+! at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:97)
+! at com.codahale.metrics.jetty9.InstrumentedHandler.handle(InstrumentedHandler.java:175)
+! at io.dropwizard.jetty.RoutingHandler.handle(RoutingHandler.java:51)
+! at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:97)
+! at org.eclipse.jetty.server.handler.RequestLogHandler.handle(RequestLogHandler.java:92)
+! at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:97)
+! at org.eclipse.jetty.server.handler.StatisticsHandler.handle(StatisticsHandler.java:162)
+! at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:97)
+! at org.eclipse.jetty.server.Server.handle(Server.java:446)
+! at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:271)
+! at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:246)
+! at org.eclipse.jetty.io.AbstractConnection$ReadCallback.run(AbstractConnection.java:358)
+! at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:601)
+! at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:532)
+! at java.lang.Thread.run(Thread.java:745)
+INFO  [2015-04-18 11:46:00,415] [ ] org.eclipse.jetty.server.ServerConnector: Stopped application@9596ce8{HTTP/1.1}{0.0.0.0:26000}
+INFO  [2015-04-18 11:46:00,416] [ ] org.eclipse.jetty.server.ServerConnector: Stopped admin@75ae4a1f{HTTP/1.1}{0.0.0.0:26001}
+INFO  [2015-04-18 11:46:00,418] [ ] org.eclipse.jetty.server.handler.ContextHandler: Stopped i.d.j.MutableServletContextHandler@11d045b4{/,null,UNAVAILABLE}
+INFO  [2015-04-18 11:46:00,419] [ ] org.eclipse.jetty.server.handler.ContextHandler: Stopped i.d.j.MutableServletContextHandler@2577a95d{/,null,UNAVAILABLE}
+INFO  [2015-04-18 11:47:12,682] [ ] io.dropwizard.server.ServerFactory: Starting WoollyService
+INFO  [2015-04-18 11:47:13,008] [ ] org.eclipse.jetty.setuid.SetUIDListener: Opened application@227a47{HTTP/1.1}{0.0.0.0:26000}
+INFO  [2015-04-18 11:47:13,008] [ ] org.eclipse.jetty.setuid.SetUIDListener: Opened admin@9596ce8{HTTP/1.1}{0.0.0.0:26001}
+INFO  [2015-04-18 11:47:13,014] [ ] org.eclipse.jetty.server.Server: jetty-9.0.7.v20131107
+INFO  [2015-04-18 11:47:13,198] [ ] com.sun.jersey.guice.spi.container.GuiceComponentProviderFactory: Registering woolly.resource.TestResource as a root resource class
+INFO  [2015-04-18 11:47:13,201] [ ] com.sun.jersey.server.impl.application.WebApplicationImpl: Initiating Jersey application, version 'Jersey: 1.18.1 02/19/2014 03:28 AM'
+INFO  [2015-04-18 11:47:13,411] [ ] io.dropwizard.jersey.DropwizardResourceConfig: The following paths were found for the configured resources:
+
+    GET     /v1/test (woolly.resource.TestResource)
+
+INFO  [2015-04-18 11:47:13,978] [ ] com.sun.jersey.guice.spi.container.GuiceComponentProviderFactory: Binding woolly.resource.TestResource to GuiceManagedComponentProvider with the scope "Singleton"
+INFO  [2015-04-18 11:47:14,000] [ ] org.eclipse.jetty.server.handler.ContextHandler: Started i.d.j.MutableServletContextHandler@784223e9{/,null,AVAILABLE}
+INFO  [2015-04-18 11:47:14,006] [ ] io.dropwizard.setup.AdminEnvironment: tasks = 
+
+    POST    /tasks/gc (io.dropwizard.servlets.tasks.GarbageCollectionTask)
+
+WARN  [2015-04-18 11:47:14,007] [ ] io.dropwizard.setup.AdminEnvironment: 
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!    THIS APPLICATION HAS NO HEALTHCHECKS. THIS MEANS YOU WILL NEVER KNOW      !
+!     IF IT DIES IN PRODUCTION, WHICH MEANS YOU WILL NEVER KNOW IF YOU'RE      !
+!    LETTING YOUR USERS DOWN. YOU SHOULD ADD A HEALTHCHECK FOR EACH OF YOUR    !
+!         APPLICATION'S DEPENDENCIES WHICH FULLY (BUT LIGHTLY) TESTS IT.       !
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+INFO  [2015-04-18 11:47:14,015] [ ] org.eclipse.jetty.server.handler.ContextHandler: Started i.d.j.MutableServletContextHandler@64deb58f{/,null,AVAILABLE}
+INFO  [2015-04-18 11:47:14,029] [ ] org.eclipse.jetty.server.ServerConnector: Started application@227a47{HTTP/1.1}{0.0.0.0:26000}
+INFO  [2015-04-18 11:47:14,032] [ ] org.eclipse.jetty.server.ServerConnector: Started admin@9596ce8{HTTP/1.1}{0.0.0.0:26001}
+ERROR [2015-04-18 15:37:37,810] [REQ-12ad9d3d-369e-4364-a911-3e24af9219c5 TXN-b35149b6-e674-4a4d-a230-6a285721b5e7] io.dropwizard.jersey.errors.LoggingExceptionMapper: Error handling a request: dcb9324c4a7cc7cb
+! java.lang.NullPointerException: null
+! at com.google.inject.persist.jpa.JpaPersistService.begin(JpaPersistService.java:70)
+! at com.google.inject.persist.jpa.JpaLocalTxnInterceptor.invoke(JpaLocalTxnInterceptor.java:49)
+! at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+! at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+! at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+! at java.lang.reflect.Method.invoke(Method.java:497)
+! at com.sun.jersey.spi.container.JavaMethodInvokerFactory$1.invoke(JavaMethodInvokerFactory.java:60)
+! at com.sun.jersey.server.impl.model.method.dispatch.AbstractResourceMethodDispatchProvider$ResponseOutInvoker._dispatch(AbstractResourceMethodDispatchProvider.java:205)
+! at com.sun.jersey.server.impl.model.method.dispatch.ResourceJavaMethodDispatcher.dispatch(ResourceJavaMethodDispatcher.java:75)
+! at com.codahale.metrics.jersey.InstrumentedResourceMethodDispatchProvider$TimedRequestDispatcher.dispatch(InstrumentedResourceMethodDispatchProvider.java:30)
+! at io.dropwizard.jersey.guava.OptionalResourceMethodDispatchAdapter$OptionalRequestDispatcher.dispatch(OptionalResourceMethodDispatchAdapter.java:37)
+! at com.sun.jersey.server.impl.uri.rules.HttpMethodRule.accept(HttpMethodRule.java:302)
+! at com.sun.jersey.server.impl.uri.rules.ResourceClassRule.accept(ResourceClassRule.java:108)
+! at com.sun.jersey.server.impl.uri.rules.RightHandPathRule.accept(RightHandPathRule.java:147)
+! at com.sun.jersey.server.impl.uri.rules.RootResourceClassesRule.accept(RootResourceClassesRule.java:84)
+! at com.sun.jersey.server.impl.application.WebApplicationImpl._handleRequest(WebApplicationImpl.java:1542)
+! at com.sun.jersey.server.impl.application.WebApplicationImpl._handleRequest(WebApplicationImpl.java:1473)
+! at com.sun.jersey.server.impl.application.WebApplicationImpl.handleRequest(WebApplicationImpl.java:1419)
+! at com.sun.jersey.server.impl.application.WebApplicationImpl.handleRequest(WebApplicationImpl.java:1409)
+! at com.sun.jersey.spi.container.servlet.WebComponent.service(WebComponent.java:409)
+! at com.sun.jersey.spi.container.servlet.ServletContainer.service(ServletContainer.java:540)
+! at com.sun.jersey.spi.container.servlet.ServletContainer.service(ServletContainer.java:715)
+! at javax.servlet.http.HttpServlet.service(HttpServlet.java:848)
+! at io.dropwizard.jetty.NonblockingServletHolder.handle(NonblockingServletHolder.java:49)
+! at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1515)
+! at org.eclipse.jetty.servlets.UserAgentFilter.doFilter(UserAgentFilter.java:83)
+! at org.eclipse.jetty.servlets.GzipFilter.doFilter(GzipFilter.java:348)
+! at io.dropwizard.jetty.BiDiGzipFilter.doFilter(BiDiGzipFilter.java:127)
+! at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1486)
+! at io.dropwizard.servlets.ThreadNameFilter.doFilter(ThreadNameFilter.java:29)
+! at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1486)
+! at io.dropwizard.jersey.filter.AllowedMethodsFilter.handle(AllowedMethodsFilter.java:44)
+! at io.dropwizard.jersey.filter.AllowedMethodsFilter.doFilter(AllowedMethodsFilter.java:39)
+! at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1486)
+! at fk.sp.common.extensions.RequestContextFilter.doFilter(RequestContextFilter.java:53)
+! at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1486)
+! at fk.sp.common.extensions.RequestContextFilter.doFilter(RequestContextFilter.java:53)
+! at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1486)
+! at com.google.inject.servlet.FilterChainInvocation.doFilter(FilterChainInvocation.java:66)
+! at com.google.inject.servlet.ManagedFilterPipeline.dispatch(ManagedFilterPipeline.java:118)
+! at com.google.inject.servlet.GuiceFilter.doFilter(GuiceFilter.java:113)
+! at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1486)
+! at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:519)
+! at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1097)
+! at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:448)
+! at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1031)
+! at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:136)
+! at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:97)
+! at com.codahale.metrics.jetty9.InstrumentedHandler.handle(InstrumentedHandler.java:175)
+! at io.dropwizard.jetty.RoutingHandler.handle(RoutingHandler.java:51)
+! at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:97)
+! at org.eclipse.jetty.server.handler.RequestLogHandler.handle(RequestLogHandler.java:92)
+! at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:97)
+! at org.eclipse.jetty.server.handler.StatisticsHandler.handle(StatisticsHandler.java:162)
+! at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:97)
+! at org.eclipse.jetty.server.Server.handle(Server.java:446)
+! at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:271)
+! at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:246)
+! at org.eclipse.jetty.io.AbstractConnection$ReadCallback.run(AbstractConnection.java:358)
+! at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:601)
+! at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:532)
+! at java.lang.Thread.run(Thread.java:745)
+INFO  [2015-04-18 15:41:44,197] [ ] org.eclipse.jetty.server.ServerConnector: Stopped application@227a47{HTTP/1.1}{0.0.0.0:26000}
+INFO  [2015-04-18 15:41:44,198] [ ] org.eclipse.jetty.server.ServerConnector: Stopped admin@9596ce8{HTTP/1.1}{0.0.0.0:26001}
+INFO  [2015-04-18 15:41:44,201] [ ] org.eclipse.jetty.server.handler.ContextHandler: Stopped i.d.j.MutableServletContextHandler@64deb58f{/,null,UNAVAILABLE}
+INFO  [2015-04-18 15:41:44,202] [ ] org.eclipse.jetty.server.handler.ContextHandler: Stopped i.d.j.MutableServletContextHandler@784223e9{/,null,UNAVAILABLE}
+INFO  [2015-04-18 15:41:52,320] [ ] io.dropwizard.server.ServerFactory: Starting WoollyService
+INFO  [2015-04-18 15:41:52,736] [ ] org.eclipse.jetty.setuid.SetUIDListener: Opened application@70228253{HTTP/1.1}{0.0.0.0:26000}
+INFO  [2015-04-18 15:41:52,737] [ ] org.eclipse.jetty.setuid.SetUIDListener: Opened admin@63c12e52{HTTP/1.1}{0.0.0.0:26001}
+INFO  [2015-04-18 15:41:52,742] [ ] org.eclipse.jetty.server.Server: jetty-9.0.7.v20131107
+INFO  [2015-04-18 15:41:53,124] [ ] com.sun.jersey.guice.spi.container.GuiceComponentProviderFactory: Registering woolly.resource.TestResource as a root resource class
+INFO  [2015-04-18 15:41:53,129] [ ] com.sun.jersey.server.impl.application.WebApplicationImpl: Initiating Jersey application, version 'Jersey: 1.18.1 02/19/2014 03:28 AM'
+INFO  [2015-04-18 15:41:53,382] [ ] io.dropwizard.jersey.DropwizardResourceConfig: The following paths were found for the configured resources:
+
+    GET     /v1/test (woolly.resource.TestResource)
+
+INFO  [2015-04-18 15:41:54,043] [ ] com.sun.jersey.guice.spi.container.GuiceComponentProviderFactory: Binding woolly.resource.TestResource to GuiceManagedComponentProvider with the scope "Singleton"
+INFO  [2015-04-18 15:41:54,099] [ ] org.eclipse.jetty.server.handler.ContextHandler: Started i.d.j.MutableServletContextHandler@45c9b3{/,null,AVAILABLE}
+INFO  [2015-04-18 15:41:54,107] [ ] io.dropwizard.setup.AdminEnvironment: tasks = 
+
+    POST    /tasks/gc (io.dropwizard.servlets.tasks.GarbageCollectionTask)
+
+WARN  [2015-04-18 15:41:54,108] [ ] io.dropwizard.setup.AdminEnvironment: 
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!    THIS APPLICATION HAS NO HEALTHCHECKS. THIS MEANS YOU WILL NEVER KNOW      !
+!     IF IT DIES IN PRODUCTION, WHICH MEANS YOU WILL NEVER KNOW IF YOU'RE      !
+!    LETTING YOUR USERS DOWN. YOU SHOULD ADD A HEALTHCHECK FOR EACH OF YOUR    !
+!         APPLICATION'S DEPENDENCIES WHICH FULLY (BUT LIGHTLY) TESTS IT.       !
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+INFO  [2015-04-18 15:41:54,124] [ ] org.eclipse.jetty.server.handler.ContextHandler: Started i.d.j.MutableServletContextHandler@748a654a{/,null,AVAILABLE}
+INFO  [2015-04-18 15:41:54,147] [ ] org.eclipse.jetty.server.ServerConnector: Started application@70228253{HTTP/1.1}{0.0.0.0:26000}
+INFO  [2015-04-18 15:41:54,149] [ ] org.eclipse.jetty.server.ServerConnector: Started admin@63c12e52{HTTP/1.1}{0.0.0.0:26001}
+ERROR [2015-04-18 15:43:08,487] [REQ-2a4314c1-68b9-4fd0-b34b-e7ca47bb49d1 TXN-e478fe35-2319-4eb3-8478-3eb0f3f27aa9] io.dropwizard.jersey.errors.LoggingExceptionMapper: Error handling a request: a02a8dd2c3905b4e
+! java.lang.NullPointerException: null
+! at com.google.inject.persist.jpa.JpaPersistService.begin(JpaPersistService.java:70)
+! at com.google.inject.persist.jpa.JpaLocalTxnInterceptor.invoke(JpaLocalTxnInterceptor.java:49)
+! at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+! at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+! at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+! at java.lang.reflect.Method.invoke(Method.java:497)
+! at com.sun.jersey.spi.container.JavaMethodInvokerFactory$1.invoke(JavaMethodInvokerFactory.java:60)
+! at com.sun.jersey.server.impl.model.method.dispatch.AbstractResourceMethodDispatchProvider$ResponseOutInvoker._dispatch(AbstractResourceMethodDispatchProvider.java:205)
+! at com.sun.jersey.server.impl.model.method.dispatch.ResourceJavaMethodDispatcher.dispatch(ResourceJavaMethodDispatcher.java:75)
+! at com.codahale.metrics.jersey.InstrumentedResourceMethodDispatchProvider$TimedRequestDispatcher.dispatch(InstrumentedResourceMethodDispatchProvider.java:30)
+! at io.dropwizard.jersey.guava.OptionalResourceMethodDispatchAdapter$OptionalRequestDispatcher.dispatch(OptionalResourceMethodDispatchAdapter.java:37)
+! at com.sun.jersey.server.impl.uri.rules.HttpMethodRule.accept(HttpMethodRule.java:302)
+! at com.sun.jersey.server.impl.uri.rules.ResourceClassRule.accept(ResourceClassRule.java:108)
+! at com.sun.jersey.server.impl.uri.rules.RightHandPathRule.accept(RightHandPathRule.java:147)
+! at com.sun.jersey.server.impl.uri.rules.RootResourceClassesRule.accept(RootResourceClassesRule.java:84)
+! at com.sun.jersey.server.impl.application.WebApplicationImpl._handleRequest(WebApplicationImpl.java:1542)
+! at com.sun.jersey.server.impl.application.WebApplicationImpl._handleRequest(WebApplicationImpl.java:1473)
+! at com.sun.jersey.server.impl.application.WebApplicationImpl.handleRequest(WebApplicationImpl.java:1419)
+! at com.sun.jersey.server.impl.application.WebApplicationImpl.handleRequest(WebApplicationImpl.java:1409)
+! at com.sun.jersey.spi.container.servlet.WebComponent.service(WebComponent.java:409)
+! at com.sun.jersey.spi.container.servlet.ServletContainer.service(ServletContainer.java:540)
+! at com.sun.jersey.spi.container.servlet.ServletContainer.service(ServletContainer.java:715)
+! at javax.servlet.http.HttpServlet.service(HttpServlet.java:848)
+! at io.dropwizard.jetty.NonblockingServletHolder.handle(NonblockingServletHolder.java:49)
+! at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1515)
+! at org.eclipse.jetty.servlets.UserAgentFilter.doFilter(UserAgentFilter.java:83)
+! at org.eclipse.jetty.servlets.GzipFilter.doFilter(GzipFilter.java:348)
+! at io.dropwizard.jetty.BiDiGzipFilter.doFilter(BiDiGzipFilter.java:127)
+! at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1486)
+! at io.dropwizard.servlets.ThreadNameFilter.doFilter(ThreadNameFilter.java:29)
+! at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1486)
+! at io.dropwizard.jersey.filter.AllowedMethodsFilter.handle(AllowedMethodsFilter.java:44)
+! at io.dropwizard.jersey.filter.AllowedMethodsFilter.doFilter(AllowedMethodsFilter.java:39)
+! at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1486)
+! at fk.sp.common.extensions.RequestContextFilter.doFilter(RequestContextFilter.java:53)
+! at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1486)
+! at fk.sp.common.extensions.RequestContextFilter.doFilter(RequestContextFilter.java:53)
+! at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1486)
+! at com.google.inject.servlet.FilterChainInvocation.doFilter(FilterChainInvocation.java:66)
+! at com.google.inject.servlet.ManagedFilterPipeline.dispatch(ManagedFilterPipeline.java:118)
+! at com.google.inject.servlet.GuiceFilter.doFilter(GuiceFilter.java:113)
+! at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1486)
+! at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:519)
+! at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1097)
+! at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:448)
+! at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1031)
+! at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:136)
+! at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:97)
+! at com.codahale.metrics.jetty9.InstrumentedHandler.handle(InstrumentedHandler.java:175)
+! at io.dropwizard.jetty.RoutingHandler.handle(RoutingHandler.java:51)
+! at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:97)
+! at org.eclipse.jetty.server.handler.RequestLogHandler.handle(RequestLogHandler.java:92)
+! at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:97)
+! at org.eclipse.jetty.server.handler.StatisticsHandler.handle(StatisticsHandler.java:162)
+! at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:97)
+! at org.eclipse.jetty.server.Server.handle(Server.java:446)
+! at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:271)
+! at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:246)
+! at org.eclipse.jetty.io.AbstractConnection$ReadCallback.run(AbstractConnection.java:358)
+! at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:601)
+! at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:532)
+! at java.lang.Thread.run(Thread.java:745)
+INFO  [2015-04-18 15:49:07,219] [ ] org.eclipse.jetty.server.ServerConnector: Stopped application@70228253{HTTP/1.1}{0.0.0.0:26000}
+INFO  [2015-04-18 15:49:07,220] [ ] org.eclipse.jetty.server.ServerConnector: Stopped admin@63c12e52{HTTP/1.1}{0.0.0.0:26001}
+INFO  [2015-04-18 15:49:07,222] [ ] org.eclipse.jetty.server.handler.ContextHandler: Stopped i.d.j.MutableServletContextHandler@748a654a{/,null,UNAVAILABLE}
+INFO  [2015-04-18 15:51:20,722] [ ] io.dropwizard.server.ServerFactory: Starting WoollyService
+INFO  [2015-04-18 15:51:20,925] [ ] org.eclipse.jetty.setuid.SetUIDListener: Opened application@6dfa915a{HTTP/1.1}{0.0.0.0:26000}
+INFO  [2015-04-18 15:51:20,926] [ ] org.eclipse.jetty.setuid.SetUIDListener: Opened admin@78054f54{HTTP/1.1}{0.0.0.0:26001}
+INFO  [2015-04-18 15:51:20,931] [ ] org.eclipse.jetty.server.Server: jetty-9.0.7.v20131107
+INFO  [2015-04-18 15:51:21,061] [ ] com.sun.jersey.guice.spi.container.GuiceComponentProviderFactory: Registering woolly.resource.TestResource as a root resource class
+INFO  [2015-04-18 15:51:21,064] [ ] com.sun.jersey.server.impl.application.WebApplicationImpl: Initiating Jersey application, version 'Jersey: 1.18.1 02/19/2014 03:28 AM'
+INFO  [2015-04-18 15:51:21,220] [ ] io.dropwizard.jersey.DropwizardResourceConfig: The following paths were found for the configured resources:
+
+    GET     /v1/test (woolly.resource.TestResource)
+
+INFO  [2015-04-18 15:51:21,646] [ ] com.sun.jersey.guice.spi.container.GuiceComponentProviderFactory: Binding woolly.resource.TestResource to GuiceManagedComponentProvider with the scope "Singleton"
+INFO  [2015-04-18 15:51:21,680] [ ] org.eclipse.jetty.server.handler.ContextHandler: Started i.d.j.MutableServletContextHandler@7d17ee50{/,null,AVAILABLE}
+INFO  [2015-04-18 15:51:21,690] [ ] io.dropwizard.setup.AdminEnvironment: tasks = 
+
+    POST    /tasks/gc (io.dropwizard.servlets.tasks.GarbageCollectionTask)
+
+WARN  [2015-04-18 15:51:21,692] [ ] io.dropwizard.setup.AdminEnvironment: 
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!    THIS APPLICATION HAS NO HEALTHCHECKS. THIS MEANS YOU WILL NEVER KNOW      !
+!     IF IT DIES IN PRODUCTION, WHICH MEANS YOU WILL NEVER KNOW IF YOU'RE      !
+!    LETTING YOUR USERS DOWN. YOU SHOULD ADD A HEALTHCHECK FOR EACH OF YOUR    !
+!         APPLICATION'S DEPENDENCIES WHICH FULLY (BUT LIGHTLY) TESTS IT.       !
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+INFO  [2015-04-18 15:51:21,707] [ ] org.eclipse.jetty.server.handler.ContextHandler: Started i.d.j.MutableServletContextHandler@3b2553d9{/,null,AVAILABLE}
+INFO  [2015-04-18 15:51:21,724] [ ] org.eclipse.jetty.server.ServerConnector: Started application@6dfa915a{HTTP/1.1}{0.0.0.0:26000}
+INFO  [2015-04-18 15:51:21,728] [ ] org.eclipse.jetty.server.ServerConnector: Started admin@78054f54{HTTP/1.1}{0.0.0.0:26001}
+INFO  [2015-04-18 15:54:19,788] [ ] org.eclipse.jetty.server.ServerConnector: Stopped application@6dfa915a{HTTP/1.1}{0.0.0.0:26000}
+INFO  [2015-04-18 15:54:19,789] [ ] org.eclipse.jetty.server.ServerConnector: Stopped admin@78054f54{HTTP/1.1}{0.0.0.0:26001}
+INFO  [2015-04-18 15:54:19,792] [ ] org.eclipse.jetty.server.handler.ContextHandler: Stopped i.d.j.MutableServletContextHandler@3b2553d9{/,null,UNAVAILABLE}
+INFO  [2015-04-18 15:54:19,793] [ ] org.eclipse.jetty.server.handler.ContextHandler: Stopped i.d.j.MutableServletContextHandler@7d17ee50{/,null,UNAVAILABLE}
+INFO  [2015-04-18 15:54:33,063] [ ] io.dropwizard.server.ServerFactory: Starting WoollyService
+INFO  [2015-04-18 15:54:33,275] [ ] org.eclipse.jetty.setuid.SetUIDListener: Opened application@227a47{HTTP/1.1}{0.0.0.0:26000}
+INFO  [2015-04-18 15:54:33,275] [ ] org.eclipse.jetty.setuid.SetUIDListener: Opened admin@9596ce8{HTTP/1.1}{0.0.0.0:26001}
+INFO  [2015-04-18 15:54:33,278] [ ] org.eclipse.jetty.server.Server: jetty-9.0.7.v20131107
+INFO  [2015-04-18 15:54:33,428] [ ] com.sun.jersey.guice.spi.container.GuiceComponentProviderFactory: Registering woolly.resource.TestResource as a root resource class
+INFO  [2015-04-18 15:54:33,432] [ ] com.sun.jersey.server.impl.application.WebApplicationImpl: Initiating Jersey application, version 'Jersey: 1.18.1 02/19/2014 03:28 AM'
+INFO  [2015-04-18 15:54:33,572] [ ] io.dropwizard.jersey.DropwizardResourceConfig: The following paths were found for the configured resources:
+
+    GET     /v1/test (woolly.resource.TestResource)
+
+INFO  [2015-04-18 15:54:34,020] [ ] com.sun.jersey.guice.spi.container.GuiceComponentProviderFactory: Binding woolly.resource.TestResource to GuiceManagedComponentProvider with the scope "Singleton"
+INFO  [2015-04-18 15:54:34,050] [ ] org.eclipse.jetty.server.handler.ContextHandler: Started i.d.j.MutableServletContextHandler@1668919e{/,null,AVAILABLE}
+INFO  [2015-04-18 15:54:34,055] [ ] io.dropwizard.setup.AdminEnvironment: tasks = 
+
+    POST    /tasks/gc (io.dropwizard.servlets.tasks.GarbageCollectionTask)
+
+WARN  [2015-04-18 15:54:34,055] [ ] io.dropwizard.setup.AdminEnvironment: 
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!    THIS APPLICATION HAS NO HEALTHCHECKS. THIS MEANS YOU WILL NEVER KNOW      !
+!     IF IT DIES IN PRODUCTION, WHICH MEANS YOU WILL NEVER KNOW IF YOU'RE      !
+!    LETTING YOUR USERS DOWN. YOU SHOULD ADD A HEALTHCHECK FOR EACH OF YOUR    !
+!         APPLICATION'S DEPENDENCIES WHICH FULLY (BUT LIGHTLY) TESTS IT.       !
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+INFO  [2015-04-18 15:54:34,067] [ ] org.eclipse.jetty.server.handler.ContextHandler: Started i.d.j.MutableServletContextHandler@1fbf088b{/,null,AVAILABLE}
+INFO  [2015-04-18 15:54:34,081] [ ] org.eclipse.jetty.server.ServerConnector: Started application@227a47{HTTP/1.1}{0.0.0.0:26000}
+INFO  [2015-04-18 15:54:34,083] [ ] org.eclipse.jetty.server.ServerConnector: Started admin@9596ce8{HTTP/1.1}{0.0.0.0:26001}
+ERROR [2015-04-18 15:55:23,119] [REQ-b751f963-73a2-4735-998b-dcbbcbaf18e6 TXN-30d7f402-3454-415c-a6b5-a2f3f535fcb1] io.dropwizard.jersey.errors.LoggingExceptionMapper: Error handling a request: 53758c9e9ba994af
+! java.lang.NullPointerException: null
+! at com.google.inject.persist.jpa.JpaPersistService.begin(JpaPersistService.java:70)
+! at com.google.inject.persist.jpa.JpaLocalTxnInterceptor.invoke(JpaLocalTxnInterceptor.java:49)
+! at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+! at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+! at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+! at java.lang.reflect.Method.invoke(Method.java:497)
+! at com.sun.jersey.spi.container.JavaMethodInvokerFactory$1.invoke(JavaMethodInvokerFactory.java:60)
+! at com.sun.jersey.server.impl.model.method.dispatch.AbstractResourceMethodDispatchProvider$ResponseOutInvoker._dispatch(AbstractResourceMethodDispatchProvider.java:205)
+! at com.sun.jersey.server.impl.model.method.dispatch.ResourceJavaMethodDispatcher.dispatch(ResourceJavaMethodDispatcher.java:75)
+! at com.codahale.metrics.jersey.InstrumentedResourceMethodDispatchProvider$TimedRequestDispatcher.dispatch(InstrumentedResourceMethodDispatchProvider.java:30)
+! at io.dropwizard.jersey.guava.OptionalResourceMethodDispatchAdapter$OptionalRequestDispatcher.dispatch(OptionalResourceMethodDispatchAdapter.java:37)
+! at com.sun.jersey.server.impl.uri.rules.HttpMethodRule.accept(HttpMethodRule.java:302)
+! at com.sun.jersey.server.impl.uri.rules.ResourceClassRule.accept(ResourceClassRule.java:108)
+! at com.sun.jersey.server.impl.uri.rules.RightHandPathRule.accept(RightHandPathRule.java:147)
+! at com.sun.jersey.server.impl.uri.rules.RootResourceClassesRule.accept(RootResourceClassesRule.java:84)
+! at com.sun.jersey.server.impl.application.WebApplicationImpl._handleRequest(WebApplicationImpl.java:1542)
+! at com.sun.jersey.server.impl.application.WebApplicationImpl._handleRequest(WebApplicationImpl.java:1473)
+! at com.sun.jersey.server.impl.application.WebApplicationImpl.handleRequest(WebApplicationImpl.java:1419)
+! at com.sun.jersey.server.impl.application.WebApplicationImpl.handleRequest(WebApplicationImpl.java:1409)
+! at com.sun.jersey.spi.container.servlet.WebComponent.service(WebComponent.java:409)
+! at com.sun.jersey.spi.container.servlet.ServletContainer.service(ServletContainer.java:540)
+! at com.sun.jersey.spi.container.servlet.ServletContainer.service(ServletContainer.java:715)
+! at javax.servlet.http.HttpServlet.service(HttpServlet.java:848)
+! at io.dropwizard.jetty.NonblockingServletHolder.handle(NonblockingServletHolder.java:49)
+! at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1515)
+! at org.eclipse.jetty.servlets.UserAgentFilter.doFilter(UserAgentFilter.java:83)
+! at org.eclipse.jetty.servlets.GzipFilter.doFilter(GzipFilter.java:348)
+! at io.dropwizard.jetty.BiDiGzipFilter.doFilter(BiDiGzipFilter.java:127)
+! at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1486)
+! at io.dropwizard.servlets.ThreadNameFilter.doFilter(ThreadNameFilter.java:29)
+! at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1486)
+! at io.dropwizard.jersey.filter.AllowedMethodsFilter.handle(AllowedMethodsFilter.java:44)
+! at io.dropwizard.jersey.filter.AllowedMethodsFilter.doFilter(AllowedMethodsFilter.java:39)
+! at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1486)
+! at fk.sp.common.extensions.RequestContextFilter.doFilter(RequestContextFilter.java:53)
+! at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1486)
+! at fk.sp.common.extensions.RequestContextFilter.doFilter(RequestContextFilter.java:53)
+! at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1486)
+! at com.google.inject.servlet.FilterChainInvocation.doFilter(FilterChainInvocation.java:66)
+! at com.google.inject.servlet.ManagedFilterPipeline.dispatch(ManagedFilterPipeline.java:118)
+! at com.google.inject.servlet.GuiceFilter.doFilter(GuiceFilter.java:113)
+! at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1486)
+! at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:519)
+! at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1097)
+! at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:448)
+! at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1031)
+! at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:136)
+! at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:97)
+! at com.codahale.metrics.jetty9.InstrumentedHandler.handle(InstrumentedHandler.java:175)
+! at io.dropwizard.jetty.RoutingHandler.handle(RoutingHandler.java:51)
+! at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:97)
+! at org.eclipse.jetty.server.handler.RequestLogHandler.handle(RequestLogHandler.java:92)
+! at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:97)
+! at org.eclipse.jetty.server.handler.StatisticsHandler.handle(StatisticsHandler.java:162)
+! at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:97)
+! at org.eclipse.jetty.server.Server.handle(Server.java:446)
+! at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:271)
+! at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:246)
+! at org.eclipse.jetty.io.AbstractConnection$ReadCallback.run(AbstractConnection.java:358)
+! at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:601)
+! at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:532)
+! at java.lang.Thread.run(Thread.java:745)
+INFO  [2015-04-18 15:57:07,071] [ ] org.eclipse.jetty.server.ServerConnector: Stopped application@227a47{HTTP/1.1}{0.0.0.0:26000}
+INFO  [2015-04-18 15:57:07,072] [ ] org.eclipse.jetty.server.ServerConnector: Stopped admin@9596ce8{HTTP/1.1}{0.0.0.0:26001}
+INFO  [2015-04-18 15:57:07,074] [ ] org.eclipse.jetty.server.handler.ContextHandler: Stopped i.d.j.MutableServletContextHandler@1fbf088b{/,null,UNAVAILABLE}
+INFO  [2015-04-18 15:57:07,074] [ ] org.eclipse.jetty.server.handler.ContextHandler: Stopped i.d.j.MutableServletContextHandler@1668919e{/,null,UNAVAILABLE}
+INFO  [2015-04-18 15:57:15,817] [ ] io.dropwizard.server.ServerFactory: Starting WoollyService
+INFO  [2015-04-18 15:57:16,003] [ ] org.eclipse.jetty.setuid.SetUIDListener: Opened application@60bbacfc{HTTP/1.1}{0.0.0.0:26000}
+INFO  [2015-04-18 15:57:16,003] [ ] org.eclipse.jetty.setuid.SetUIDListener: Opened admin@65b97f47{HTTP/1.1}{0.0.0.0:26001}
+INFO  [2015-04-18 15:57:16,007] [ ] org.eclipse.jetty.server.Server: jetty-9.0.7.v20131107
+INFO  [2015-04-18 15:57:16,141] [ ] com.sun.jersey.guice.spi.container.GuiceComponentProviderFactory: Registering woolly.resource.TestResource as a root resource class
+INFO  [2015-04-18 15:57:16,146] [ ] com.sun.jersey.server.impl.application.WebApplicationImpl: Initiating Jersey application, version 'Jersey: 1.18.1 02/19/2014 03:28 AM'
+INFO  [2015-04-18 15:57:16,282] [ ] io.dropwizard.jersey.DropwizardResourceConfig: The following paths were found for the configured resources:
+
+    GET     /v1/test (woolly.resource.TestResource)
+
+INFO  [2015-04-18 15:57:16,676] [ ] com.sun.jersey.guice.spi.container.GuiceComponentProviderFactory: Binding woolly.resource.TestResource to GuiceManagedComponentProvider with the scope "Singleton"
+INFO  [2015-04-18 15:57:16,700] [ ] org.eclipse.jetty.server.handler.ContextHandler: Started i.d.j.MutableServletContextHandler@22c53d82{/,null,AVAILABLE}
+INFO  [2015-04-18 15:57:16,705] [ ] io.dropwizard.setup.AdminEnvironment: tasks = 
+
+    POST    /tasks/gc (io.dropwizard.servlets.tasks.GarbageCollectionTask)
+
+WARN  [2015-04-18 15:57:16,706] [ ] io.dropwizard.setup.AdminEnvironment: 
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!    THIS APPLICATION HAS NO HEALTHCHECKS. THIS MEANS YOU WILL NEVER KNOW      !
+!     IF IT DIES IN PRODUCTION, WHICH MEANS YOU WILL NEVER KNOW IF YOU'RE      !
+!    LETTING YOUR USERS DOWN. YOU SHOULD ADD A HEALTHCHECK FOR EACH OF YOUR    !
+!         APPLICATION'S DEPENDENCIES WHICH FULLY (BUT LIGHTLY) TESTS IT.       !
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+INFO  [2015-04-18 15:57:16,713] [ ] org.eclipse.jetty.server.handler.ContextHandler: Started i.d.j.MutableServletContextHandler@d70f722{/,null,AVAILABLE}
+INFO  [2015-04-18 15:57:16,724] [ ] org.eclipse.jetty.server.ServerConnector: Started application@60bbacfc{HTTP/1.1}{0.0.0.0:26000}
+INFO  [2015-04-18 15:57:16,732] [ ] org.eclipse.jetty.server.ServerConnector: Started admin@65b97f47{HTTP/1.1}{0.0.0.0:26001}
+ERROR [2015-04-18 15:57:33,272] [REQ-d67b1cd2-d16e-45cb-82a4-decb1e4af3d9 TXN-594f7fcc-9caf-47b1-9ffa-7391cd458c1f] io.dropwizard.jersey.errors.LoggingExceptionMapper: Error handling a request: c512aca05c1abe1d
+! java.lang.NullPointerException: null
+! at com.google.inject.persist.jpa.JpaPersistService.begin(JpaPersistService.java:70)
+! at com.google.inject.persist.jpa.JpaLocalTxnInterceptor.invoke(JpaLocalTxnInterceptor.java:49)
+! at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+! at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+! at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+! at java.lang.reflect.Method.invoke(Method.java:497)
+! at com.sun.jersey.spi.container.JavaMethodInvokerFactory$1.invoke(JavaMethodInvokerFactory.java:60)
+! at com.sun.jersey.server.impl.model.method.dispatch.AbstractResourceMethodDispatchProvider$ResponseOutInvoker._dispatch(AbstractResourceMethodDispatchProvider.java:205)
+! at com.sun.jersey.server.impl.model.method.dispatch.ResourceJavaMethodDispatcher.dispatch(ResourceJavaMethodDispatcher.java:75)
+! at com.codahale.metrics.jersey.InstrumentedResourceMethodDispatchProvider$TimedRequestDispatcher.dispatch(InstrumentedResourceMethodDispatchProvider.java:30)
+! at io.dropwizard.jersey.guava.OptionalResourceMethodDispatchAdapter$OptionalRequestDispatcher.dispatch(OptionalResourceMethodDispatchAdapter.java:37)
+! at com.sun.jersey.server.impl.uri.rules.HttpMethodRule.accept(HttpMethodRule.java:302)
+! at com.sun.jersey.server.impl.uri.rules.ResourceClassRule.accept(ResourceClassRule.java:108)
+! at com.sun.jersey.server.impl.uri.rules.RightHandPathRule.accept(RightHandPathRule.java:147)
+! at com.sun.jersey.server.impl.uri.rules.RootResourceClassesRule.accept(RootResourceClassesRule.java:84)
+! at com.sun.jersey.server.impl.application.WebApplicationImpl._handleRequest(WebApplicationImpl.java:1542)
+! at com.sun.jersey.server.impl.application.WebApplicationImpl._handleRequest(WebApplicationImpl.java:1473)
+! at com.sun.jersey.server.impl.application.WebApplicationImpl.handleRequest(WebApplicationImpl.java:1419)
+! at com.sun.jersey.server.impl.application.WebApplicationImpl.handleRequest(WebApplicationImpl.java:1409)
+! at com.sun.jersey.spi.container.servlet.WebComponent.service(WebComponent.java:409)
+! at com.sun.jersey.spi.container.servlet.ServletContainer.service(ServletContainer.java:540)
+! at com.sun.jersey.spi.container.servlet.ServletContainer.service(ServletContainer.java:715)
+! at javax.servlet.http.HttpServlet.service(HttpServlet.java:848)
+! at io.dropwizard.jetty.NonblockingServletHolder.handle(NonblockingServletHolder.java:49)
+! at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1515)
+! at org.eclipse.jetty.servlets.UserAgentFilter.doFilter(UserAgentFilter.java:83)
+! at org.eclipse.jetty.servlets.GzipFilter.doFilter(GzipFilter.java:348)
+! at io.dropwizard.jetty.BiDiGzipFilter.doFilter(BiDiGzipFilter.java:127)
+! at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1486)
+! at io.dropwizard.servlets.ThreadNameFilter.doFilter(ThreadNameFilter.java:29)
+! at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1486)
+! at io.dropwizard.jersey.filter.AllowedMethodsFilter.handle(AllowedMethodsFilter.java:44)
+! at io.dropwizard.jersey.filter.AllowedMethodsFilter.doFilter(AllowedMethodsFilter.java:39)
+! at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1486)
+! at fk.sp.common.extensions.RequestContextFilter.doFilter(RequestContextFilter.java:53)
+! at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1486)
+! at fk.sp.common.extensions.RequestContextFilter.doFilter(RequestContextFilter.java:53)
+! at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1486)
+! at com.google.inject.servlet.FilterChainInvocation.doFilter(FilterChainInvocation.java:66)
+! at com.google.inject.servlet.ManagedFilterPipeline.dispatch(ManagedFilterPipeline.java:118)
+! at com.google.inject.servlet.GuiceFilter.doFilter(GuiceFilter.java:113)
+! at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1486)
+! at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:519)
+! at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1097)
+! at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:448)
+! at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1031)
+! at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:136)
+! at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:97)
+! at com.codahale.metrics.jetty9.InstrumentedHandler.handle(InstrumentedHandler.java:175)
+! at io.dropwizard.jetty.RoutingHandler.handle(RoutingHandler.java:51)
+! at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:97)
+! at org.eclipse.jetty.server.handler.RequestLogHandler.handle(RequestLogHandler.java:92)
+! at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:97)
+! at org.eclipse.jetty.server.handler.StatisticsHandler.handle(StatisticsHandler.java:162)
+! at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:97)
+! at org.eclipse.jetty.server.Server.handle(Server.java:446)
+! at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:271)
+! at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:246)
+! at org.eclipse.jetty.io.AbstractConnection$ReadCallback.run(AbstractConnection.java:358)
+! at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:601)
+! at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:532)
+! at java.lang.Thread.run(Thread.java:745)
+INFO  [2015-04-18 15:59:58,262] [ ] org.eclipse.jetty.server.ServerConnector: Stopped application@60bbacfc{HTTP/1.1}{0.0.0.0:26000}
+INFO  [2015-04-18 15:59:58,263] [ ] org.eclipse.jetty.server.ServerConnector: Stopped admin@65b97f47{HTTP/1.1}{0.0.0.0:26001}
+INFO  [2015-04-18 15:59:58,265] [ ] org.eclipse.jetty.server.handler.ContextHandler: Stopped i.d.j.MutableServletContextHandler@d70f722{/,null,UNAVAILABLE}
+INFO  [2015-04-18 15:59:58,267] [ ] org.eclipse.jetty.server.handler.ContextHandler: Stopped i.d.j.MutableServletContextHandler@22c53d82{/,null,UNAVAILABLE}
+INFO  [2015-04-18 16:01:12,190] [ ] io.dropwizard.server.ServerFactory: Starting WoollyService
+INFO  [2015-04-18 16:01:12,403] [ ] org.eclipse.jetty.setuid.SetUIDListener: Opened application@227a47{HTTP/1.1}{0.0.0.0:26000}
+INFO  [2015-04-18 16:01:12,403] [ ] org.eclipse.jetty.setuid.SetUIDListener: Opened admin@9596ce8{HTTP/1.1}{0.0.0.0:26001}
+INFO  [2015-04-18 16:01:12,406] [ ] org.eclipse.jetty.server.Server: jetty-9.0.7.v20131107
+INFO  [2015-04-18 16:01:12,551] [ ] com.sun.jersey.guice.spi.container.GuiceComponentProviderFactory: Registering woolly.resource.TestResource as a root resource class
+INFO  [2015-04-18 16:01:12,556] [ ] com.sun.jersey.server.impl.application.WebApplicationImpl: Initiating Jersey application, version 'Jersey: 1.18.1 02/19/2014 03:28 AM'
+INFO  [2015-04-18 16:01:12,682] [ ] io.dropwizard.jersey.DropwizardResourceConfig: The following paths were found for the configured resources:
+
+    GET     /v1/test (woolly.resource.TestResource)
+
+INFO  [2015-04-18 16:01:13,098] [ ] com.sun.jersey.guice.spi.container.GuiceComponentProviderFactory: Binding woolly.resource.TestResource to GuiceManagedComponentProvider with the scope "Singleton"
+INFO  [2015-04-18 16:01:13,135] [ ] org.eclipse.jetty.server.handler.ContextHandler: Started i.d.j.MutableServletContextHandler@b67cc70{/,null,AVAILABLE}
+INFO  [2015-04-18 16:01:13,142] [ ] io.dropwizard.setup.AdminEnvironment: tasks = 
+
+    POST    /tasks/gc (io.dropwizard.servlets.tasks.GarbageCollectionTask)
+
+WARN  [2015-04-18 16:01:13,142] [ ] io.dropwizard.setup.AdminEnvironment: 
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!    THIS APPLICATION HAS NO HEALTHCHECKS. THIS MEANS YOU WILL NEVER KNOW      !
+!     IF IT DIES IN PRODUCTION, WHICH MEANS YOU WILL NEVER KNOW IF YOU'RE      !
+!    LETTING YOUR USERS DOWN. YOU SHOULD ADD A HEALTHCHECK FOR EACH OF YOUR    !
+!         APPLICATION'S DEPENDENCIES WHICH FULLY (BUT LIGHTLY) TESTS IT.       !
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+INFO  [2015-04-18 16:01:13,150] [ ] org.eclipse.jetty.server.handler.ContextHandler: Started i.d.j.MutableServletContextHandler@7ec95456{/,null,AVAILABLE}
+INFO  [2015-04-18 16:01:13,161] [ ] org.eclipse.jetty.server.ServerConnector: Started application@227a47{HTTP/1.1}{0.0.0.0:26000}
+INFO  [2015-04-18 16:01:13,162] [ ] org.eclipse.jetty.server.ServerConnector: Started admin@9596ce8{HTTP/1.1}{0.0.0.0:26001}
+ERROR [2015-04-18 16:01:31,017] [REQ-40712412-10fc-4baa-b07f-96014f3cdf68 TXN-1fea2d0c-4e67-4478-8038-a20efea745cc] io.dropwizard.jersey.errors.LoggingExceptionMapper: Error handling a request: af000fae30b6874a
+! java.lang.NullPointerException: null
+! at com.google.inject.persist.jpa.JpaPersistService.begin(JpaPersistService.java:70)
+! at com.google.inject.persist.jpa.JpaLocalTxnInterceptor.invoke(JpaLocalTxnInterceptor.java:49)
+! at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+! at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+! at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+! at java.lang.reflect.Method.invoke(Method.java:497)
+! at com.sun.jersey.spi.container.JavaMethodInvokerFactory$1.invoke(JavaMethodInvokerFactory.java:60)
+! at com.sun.jersey.server.impl.model.method.dispatch.AbstractResourceMethodDispatchProvider$ResponseOutInvoker._dispatch(AbstractResourceMethodDispatchProvider.java:205)
+! at com.sun.jersey.server.impl.model.method.dispatch.ResourceJavaMethodDispatcher.dispatch(ResourceJavaMethodDispatcher.java:75)
+! at com.codahale.metrics.jersey.InstrumentedResourceMethodDispatchProvider$TimedRequestDispatcher.dispatch(InstrumentedResourceMethodDispatchProvider.java:30)
+! at io.dropwizard.jersey.guava.OptionalResourceMethodDispatchAdapter$OptionalRequestDispatcher.dispatch(OptionalResourceMethodDispatchAdapter.java:37)
+! at com.sun.jersey.server.impl.uri.rules.HttpMethodRule.accept(HttpMethodRule.java:302)
+! at com.sun.jersey.server.impl.uri.rules.ResourceClassRule.accept(ResourceClassRule.java:108)
+! at com.sun.jersey.server.impl.uri.rules.RightHandPathRule.accept(RightHandPathRule.java:147)
+! at com.sun.jersey.server.impl.uri.rules.RootResourceClassesRule.accept(RootResourceClassesRule.java:84)
+! at com.sun.jersey.server.impl.application.WebApplicationImpl._handleRequest(WebApplicationImpl.java:1542)
+! at com.sun.jersey.server.impl.application.WebApplicationImpl._handleRequest(WebApplicationImpl.java:1473)
+! at com.sun.jersey.server.impl.application.WebApplicationImpl.handleRequest(WebApplicationImpl.java:1419)
+! at com.sun.jersey.server.impl.application.WebApplicationImpl.handleRequest(WebApplicationImpl.java:1409)
+! at com.sun.jersey.spi.container.servlet.WebComponent.service(WebComponent.java:409)
+! at com.sun.jersey.spi.container.servlet.ServletContainer.service(ServletContainer.java:540)
+! at com.sun.jersey.spi.container.servlet.ServletContainer.service(ServletContainer.java:715)
+! at javax.servlet.http.HttpServlet.service(HttpServlet.java:848)
+! at io.dropwizard.jetty.NonblockingServletHolder.handle(NonblockingServletHolder.java:49)
+! at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1515)
+! at org.eclipse.jetty.servlets.UserAgentFilter.doFilter(UserAgentFilter.java:83)
+! at org.eclipse.jetty.servlets.GzipFilter.doFilter(GzipFilter.java:348)
+! at io.dropwizard.jetty.BiDiGzipFilter.doFilter(BiDiGzipFilter.java:127)
+! at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1486)
+! at io.dropwizard.servlets.ThreadNameFilter.doFilter(ThreadNameFilter.java:29)
+! at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1486)
+! at io.dropwizard.jersey.filter.AllowedMethodsFilter.handle(AllowedMethodsFilter.java:44)
+! at io.dropwizard.jersey.filter.AllowedMethodsFilter.doFilter(AllowedMethodsFilter.java:39)
+! at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1486)
+! at fk.sp.common.extensions.RequestContextFilter.doFilter(RequestContextFilter.java:53)
+! at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1486)
+! at fk.sp.common.extensions.RequestContextFilter.doFilter(RequestContextFilter.java:53)
+! at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1486)
+! at com.google.inject.servlet.FilterChainInvocation.doFilter(FilterChainInvocation.java:66)
+! at com.google.inject.servlet.ManagedFilterPipeline.dispatch(ManagedFilterPipeline.java:118)
+! at com.google.inject.servlet.GuiceFilter.doFilter(GuiceFilter.java:113)
+! at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1486)
+! at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:519)
+! at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1097)
+! at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:448)
+! at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1031)
+! at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:136)
+! at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:97)
+! at com.codahale.metrics.jetty9.InstrumentedHandler.handle(InstrumentedHandler.java:175)
+! at io.dropwizard.jetty.RoutingHandler.handle(RoutingHandler.java:51)
+! at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:97)
+! at org.eclipse.jetty.server.handler.RequestLogHandler.handle(RequestLogHandler.java:92)
+! at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:97)
+! at org.eclipse.jetty.server.handler.StatisticsHandler.handle(StatisticsHandler.java:162)
+! at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:97)
+! at org.eclipse.jetty.server.Server.handle(Server.java:446)
+! at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:271)
+! at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:246)
+! at org.eclipse.jetty.io.AbstractConnection$ReadCallback.run(AbstractConnection.java:358)
+! at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:601)
+! at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:532)
+! at java.lang.Thread.run(Thread.java:745)
+INFO  [2015-04-18 18:02:13,536] [ ] org.eclipse.jetty.server.ServerConnector: Stopped application@227a47{HTTP/1.1}{0.0.0.0:26000}
+INFO  [2015-04-18 18:02:13,537] [ ] org.eclipse.jetty.server.ServerConnector: Stopped admin@9596ce8{HTTP/1.1}{0.0.0.0:26001}
+INFO  [2015-04-18 18:02:13,540] [ ] org.eclipse.jetty.server.handler.ContextHandler: Stopped i.d.j.MutableServletContextHandler@7ec95456{/,null,UNAVAILABLE}
+INFO  [2015-04-18 18:02:13,542] [ ] org.eclipse.jetty.server.handler.ContextHandler: Stopped i.d.j.MutableServletContextHandler@b67cc70{/,null,UNAVAILABLE}
+INFO  [2015-04-18 18:09:25,408] [ ] io.dropwizard.server.ServerFactory: Starting WoollyService
+INFO  [2015-04-18 18:09:25,617] [ ] org.eclipse.jetty.setuid.SetUIDListener: Opened application@63c12e52{HTTP/1.1}{0.0.0.0:26000}
+INFO  [2015-04-18 18:09:25,618] [ ] org.eclipse.jetty.setuid.SetUIDListener: Opened admin@21bd20ee{HTTP/1.1}{0.0.0.0:26001}
+INFO  [2015-04-18 18:09:25,621] [ ] org.eclipse.jetty.server.Server: jetty-9.0.7.v20131107
+INFO  [2015-04-18 18:09:25,797] [ ] com.sun.jersey.guice.spi.container.GuiceComponentProviderFactory: Registering woolly.resource.TestResource as a root resource class
+INFO  [2015-04-18 18:09:25,801] [ ] com.sun.jersey.server.impl.application.WebApplicationImpl: Initiating Jersey application, version 'Jersey: 1.18.1 02/19/2014 03:28 AM'
+INFO  [2015-04-18 18:09:25,961] [ ] io.dropwizard.jersey.DropwizardResourceConfig: The following paths were found for the configured resources:
+
+    GET     /v1/test (woolly.resource.TestResource)
+
+INFO  [2015-04-18 18:09:26,603] [ ] com.sun.jersey.guice.spi.container.GuiceComponentProviderFactory: Binding woolly.resource.TestResource to GuiceManagedComponentProvider with the scope "Singleton"
+INFO  [2015-04-18 18:09:26,622] [ ] org.eclipse.jetty.server.handler.ContextHandler: Started i.d.j.MutableServletContextHandler@68d6d775{/,null,AVAILABLE}
+INFO  [2015-04-18 18:09:26,626] [ ] io.dropwizard.setup.AdminEnvironment: tasks = 
+
+    POST    /tasks/gc (io.dropwizard.servlets.tasks.GarbageCollectionTask)
+
+WARN  [2015-04-18 18:09:26,627] [ ] io.dropwizard.setup.AdminEnvironment: 
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!    THIS APPLICATION HAS NO HEALTHCHECKS. THIS MEANS YOU WILL NEVER KNOW      !
+!     IF IT DIES IN PRODUCTION, WHICH MEANS YOU WILL NEVER KNOW IF YOU'RE      !
+!    LETTING YOUR USERS DOWN. YOU SHOULD ADD A HEALTHCHECK FOR EACH OF YOUR    !
+!         APPLICATION'S DEPENDENCIES WHICH FULLY (BUT LIGHTLY) TESTS IT.       !
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+INFO  [2015-04-18 18:09:26,637] [ ] org.eclipse.jetty.server.handler.ContextHandler: Started i.d.j.MutableServletContextHandler@798256c5{/,null,AVAILABLE}
+INFO  [2015-04-18 18:09:26,654] [ ] org.eclipse.jetty.server.ServerConnector: Started application@63c12e52{HTTP/1.1}{0.0.0.0:26000}
+INFO  [2015-04-18 18:09:26,658] [ ] org.eclipse.jetty.server.ServerConnector: Started admin@21bd20ee{HTTP/1.1}{0.0.0.0:26001}
+ERROR [2015-04-18 18:12:55,203] [REQ-b7155b9e-6ce2-415a-83b9-3b2fe4a64848 TXN-b647f57d-9f6f-4c97-91b1-3274c86b3661] io.dropwizard.jersey.errors.LoggingExceptionMapper: Error handling a request: ca425b6d69b28767
+! java.lang.NullPointerException: null
+! at com.google.inject.persist.jpa.JpaPersistService.begin(JpaPersistService.java:70)
+! at com.google.inject.persist.jpa.JpaLocalTxnInterceptor.invoke(JpaLocalTxnInterceptor.java:49)
+! at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+! at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+! at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+! at java.lang.reflect.Method.invoke(Method.java:497)
+! at com.sun.jersey.spi.container.JavaMethodInvokerFactory$1.invoke(JavaMethodInvokerFactory.java:60)
+! at com.sun.jersey.server.impl.model.method.dispatch.AbstractResourceMethodDispatchProvider$ResponseOutInvoker._dispatch(AbstractResourceMethodDispatchProvider.java:205)
+! at com.sun.jersey.server.impl.model.method.dispatch.ResourceJavaMethodDispatcher.dispatch(ResourceJavaMethodDispatcher.java:75)
+! at com.codahale.metrics.jersey.InstrumentedResourceMethodDispatchProvider$TimedRequestDispatcher.dispatch(InstrumentedResourceMethodDispatchProvider.java:30)
+! at io.dropwizard.jersey.guava.OptionalResourceMethodDispatchAdapter$OptionalRequestDispatcher.dispatch(OptionalResourceMethodDispatchAdapter.java:37)
+! at com.sun.jersey.server.impl.uri.rules.HttpMethodRule.accept(HttpMethodRule.java:302)
+! at com.sun.jersey.server.impl.uri.rules.ResourceClassRule.accept(ResourceClassRule.java:108)
+! at com.sun.jersey.server.impl.uri.rules.RightHandPathRule.accept(RightHandPathRule.java:147)
+! at com.sun.jersey.server.impl.uri.rules.RootResourceClassesRule.accept(RootResourceClassesRule.java:84)
+! at com.sun.jersey.server.impl.application.WebApplicationImpl._handleRequest(WebApplicationImpl.java:1542)
+! at com.sun.jersey.server.impl.application.WebApplicationImpl._handleRequest(WebApplicationImpl.java:1473)
+! at com.sun.jersey.server.impl.application.WebApplicationImpl.handleRequest(WebApplicationImpl.java:1419)
+! at com.sun.jersey.server.impl.application.WebApplicationImpl.handleRequest(WebApplicationImpl.java:1409)
+! at com.sun.jersey.spi.container.servlet.WebComponent.service(WebComponent.java:409)
+! at com.sun.jersey.spi.container.servlet.ServletContainer.service(ServletContainer.java:540)
+! at com.sun.jersey.spi.container.servlet.ServletContainer.service(ServletContainer.java:715)
+! at javax.servlet.http.HttpServlet.service(HttpServlet.java:848)
+! at io.dropwizard.jetty.NonblockingServletHolder.handle(NonblockingServletHolder.java:49)
+! at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1515)
+! at org.eclipse.jetty.servlets.UserAgentFilter.doFilter(UserAgentFilter.java:83)
+! at org.eclipse.jetty.servlets.GzipFilter.doFilter(GzipFilter.java:348)
+! at io.dropwizard.jetty.BiDiGzipFilter.doFilter(BiDiGzipFilter.java:127)
+! at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1486)
+! at io.dropwizard.servlets.ThreadNameFilter.doFilter(ThreadNameFilter.java:29)
+! at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1486)
+! at io.dropwizard.jersey.filter.AllowedMethodsFilter.handle(AllowedMethodsFilter.java:44)
+! at io.dropwizard.jersey.filter.AllowedMethodsFilter.doFilter(AllowedMethodsFilter.java:39)
+! at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1486)
+! at fk.sp.common.extensions.RequestContextFilter.doFilter(RequestContextFilter.java:53)
+! at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1486)
+! at fk.sp.common.extensions.RequestContextFilter.doFilter(RequestContextFilter.java:53)
+! at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1486)
+! at com.google.inject.servlet.FilterChainInvocation.doFilter(FilterChainInvocation.java:66)
+! at com.google.inject.servlet.ManagedFilterPipeline.dispatch(ManagedFilterPipeline.java:118)
+! at com.google.inject.servlet.GuiceFilter.doFilter(GuiceFilter.java:113)
+! at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1486)
+! at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:519)
+! at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1097)
+! at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:448)
+! at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1031)
+! at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:136)
+! at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:97)
+! at com.codahale.metrics.jetty9.InstrumentedHandler.handle(InstrumentedHandler.java:175)
+! at io.dropwizard.jetty.RoutingHandler.handle(RoutingHandler.java:51)
+! at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:97)
+! at org.eclipse.jetty.server.handler.RequestLogHandler.handle(RequestLogHandler.java:92)
+! at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:97)
+! at org.eclipse.jetty.server.handler.StatisticsHandler.handle(StatisticsHandler.java:162)
+! at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:97)
+! at org.eclipse.jetty.server.Server.handle(Server.java:446)
+! at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:271)
+! at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:246)
+! at org.eclipse.jetty.io.AbstractConnection$ReadCallback.run(AbstractConnection.java:358)
+! at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:601)
+! at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:532)
+! at java.lang.Thread.run(Thread.java:745)
+INFO  [2015-04-18 18:12:59,225] [ ] org.eclipse.jetty.server.ServerConnector: Stopped application@63c12e52{HTTP/1.1}{0.0.0.0:26000}
+INFO  [2015-04-18 18:12:59,227] [ ] org.eclipse.jetty.server.ServerConnector: Stopped admin@21bd20ee{HTTP/1.1}{0.0.0.0:26001}
+INFO  [2015-04-18 18:12:59,228] [ ] org.eclipse.jetty.server.handler.ContextHandler: Stopped i.d.j.MutableServletContextHandler@798256c5{/,null,UNAVAILABLE}
+INFO  [2015-04-18 18:12:59,229] [ ] org.eclipse.jetty.server.handler.ContextHandler: Stopped i.d.j.MutableServletContextHandler@68d6d775{/,null,UNAVAILABLE}
+INFO  [2015-04-18 18:13:06,013] [ ] io.dropwizard.server.ServerFactory: Starting WoollyService
+INFO  [2015-04-18 18:13:06,291] [ ] org.eclipse.jetty.setuid.SetUIDListener: Opened application@f951a7f{HTTP/1.1}{0.0.0.0:26000}
+INFO  [2015-04-18 18:13:06,291] [ ] org.eclipse.jetty.setuid.SetUIDListener: Opened admin@20cece0b{HTTP/1.1}{0.0.0.0:26001}
+INFO  [2015-04-18 18:13:06,296] [ ] org.eclipse.jetty.server.Server: jetty-9.0.7.v20131107
+INFO  [2015-04-18 18:13:06,517] [ ] com.sun.jersey.guice.spi.container.GuiceComponentProviderFactory: Registering woolly.resource.TestResource as a root resource class
+INFO  [2015-04-18 18:13:06,529] [ ] com.sun.jersey.server.impl.application.WebApplicationImpl: Initiating Jersey application, version 'Jersey: 1.18.1 02/19/2014 03:28 AM'
+INFO  [2015-04-18 18:13:06,756] [ ] io.dropwizard.jersey.DropwizardResourceConfig: The following paths were found for the configured resources:
+
+    GET     /v1/test (woolly.resource.TestResource)
+
+INFO  [2015-04-18 18:13:07,319] [ ] com.sun.jersey.guice.spi.container.GuiceComponentProviderFactory: Binding woolly.resource.TestResource to GuiceManagedComponentProvider with the scope "Singleton"
+INFO  [2015-04-18 18:13:07,361] [ ] org.eclipse.jetty.server.handler.ContextHandler: Started i.d.j.MutableServletContextHandler@7316523a{/,null,AVAILABLE}
+INFO  [2015-04-18 18:13:07,367] [ ] io.dropwizard.setup.AdminEnvironment: tasks = 
+
+    POST    /tasks/gc (io.dropwizard.servlets.tasks.GarbageCollectionTask)
+
+WARN  [2015-04-18 18:13:07,368] [ ] io.dropwizard.setup.AdminEnvironment: 
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!    THIS APPLICATION HAS NO HEALTHCHECKS. THIS MEANS YOU WILL NEVER KNOW      !
+!     IF IT DIES IN PRODUCTION, WHICH MEANS YOU WILL NEVER KNOW IF YOU'RE      !
+!    LETTING YOUR USERS DOWN. YOU SHOULD ADD A HEALTHCHECK FOR EACH OF YOUR    !
+!         APPLICATION'S DEPENDENCIES WHICH FULLY (BUT LIGHTLY) TESTS IT.       !
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+INFO  [2015-04-18 18:13:07,376] [ ] org.eclipse.jetty.server.handler.ContextHandler: Started i.d.j.MutableServletContextHandler@2b1cd7bc{/,null,AVAILABLE}
+INFO  [2015-04-18 18:13:07,389] [ ] org.eclipse.jetty.server.ServerConnector: Started application@f951a7f{HTTP/1.1}{0.0.0.0:26000}
+INFO  [2015-04-18 18:13:07,392] [ ] org.eclipse.jetty.server.ServerConnector: Started admin@20cece0b{HTTP/1.1}{0.0.0.0:26001}
+ERROR [2015-04-18 18:13:25,852] [REQ-dfd32926-5f74-41ad-9b2f-c467fbd2f972 TXN-2606d11c-2bd8-4ca3-9727-01a18a173ae3] io.dropwizard.jersey.errors.LoggingExceptionMapper: Error handling a request: ea5e2994ef85a711
+! java.lang.NullPointerException: null
+! at com.google.inject.persist.jpa.JpaPersistService.begin(JpaPersistService.java:70)
+! at com.google.inject.persist.jpa.JpaLocalTxnInterceptor.invoke(JpaLocalTxnInterceptor.java:49)
+! at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+! at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+! at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+! at java.lang.reflect.Method.invoke(Method.java:497)
+! at com.sun.jersey.spi.container.JavaMethodInvokerFactory$1.invoke(JavaMethodInvokerFactory.java:60)
+! at com.sun.jersey.server.impl.model.method.dispatch.AbstractResourceMethodDispatchProvider$ResponseOutInvoker._dispatch(AbstractResourceMethodDispatchProvider.java:205)
+! at com.sun.jersey.server.impl.model.method.dispatch.ResourceJavaMethodDispatcher.dispatch(ResourceJavaMethodDispatcher.java:75)
+! at com.codahale.metrics.jersey.InstrumentedResourceMethodDispatchProvider$TimedRequestDispatcher.dispatch(InstrumentedResourceMethodDispatchProvider.java:30)
+! at io.dropwizard.jersey.guava.OptionalResourceMethodDispatchAdapter$OptionalRequestDispatcher.dispatch(OptionalResourceMethodDispatchAdapter.java:37)
+! at com.sun.jersey.server.impl.uri.rules.HttpMethodRule.accept(HttpMethodRule.java:302)
+! at com.sun.jersey.server.impl.uri.rules.ResourceClassRule.accept(ResourceClassRule.java:108)
+! at com.sun.jersey.server.impl.uri.rules.RightHandPathRule.accept(RightHandPathRule.java:147)
+! at com.sun.jersey.server.impl.uri.rules.RootResourceClassesRule.accept(RootResourceClassesRule.java:84)
+! at com.sun.jersey.server.impl.application.WebApplicationImpl._handleRequest(WebApplicationImpl.java:1542)
+! at com.sun.jersey.server.impl.application.WebApplicationImpl._handleRequest(WebApplicationImpl.java:1473)
+! at com.sun.jersey.server.impl.application.WebApplicationImpl.handleRequest(WebApplicationImpl.java:1419)
+! at com.sun.jersey.server.impl.application.WebApplicationImpl.handleRequest(WebApplicationImpl.java:1409)
+! at com.sun.jersey.spi.container.servlet.WebComponent.service(WebComponent.java:409)
+! at com.sun.jersey.spi.container.servlet.ServletContainer.service(ServletContainer.java:540)
+! at com.sun.jersey.spi.container.servlet.ServletContainer.service(ServletContainer.java:715)
+! at javax.servlet.http.HttpServlet.service(HttpServlet.java:848)
+! at io.dropwizard.jetty.NonblockingServletHolder.handle(NonblockingServletHolder.java:49)
+! at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1515)
+! at org.eclipse.jetty.servlets.UserAgentFilter.doFilter(UserAgentFilter.java:83)
+! at org.eclipse.jetty.servlets.GzipFilter.doFilter(GzipFilter.java:348)
+! at io.dropwizard.jetty.BiDiGzipFilter.doFilter(BiDiGzipFilter.java:127)
+! at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1486)
+! at io.dropwizard.servlets.ThreadNameFilter.doFilter(ThreadNameFilter.java:29)
+! at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1486)
+! at io.dropwizard.jersey.filter.AllowedMethodsFilter.handle(AllowedMethodsFilter.java:44)
+! at io.dropwizard.jersey.filter.AllowedMethodsFilter.doFilter(AllowedMethodsFilter.java:39)
+! at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1486)
+! at fk.sp.common.extensions.RequestContextFilter.doFilter(RequestContextFilter.java:53)
+! at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1486)
+! at fk.sp.common.extensions.RequestContextFilter.doFilter(RequestContextFilter.java:53)
+! at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1486)
+! at com.google.inject.servlet.FilterChainInvocation.doFilter(FilterChainInvocation.java:66)
+! at com.google.inject.servlet.ManagedFilterPipeline.dispatch(ManagedFilterPipeline.java:118)
+! at com.google.inject.servlet.GuiceFilter.doFilter(GuiceFilter.java:113)
+! at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1486)
+! at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:519)
+! at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1097)
+! at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:448)
+! at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1031)
+! at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:136)
+! at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:97)
+! at com.codahale.metrics.jetty9.InstrumentedHandler.handle(InstrumentedHandler.java:175)
+! at io.dropwizard.jetty.RoutingHandler.handle(RoutingHandler.java:51)
+! at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:97)
+! at org.eclipse.jetty.server.handler.RequestLogHandler.handle(RequestLogHandler.java:92)
+! at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:97)
+! at org.eclipse.jetty.server.handler.StatisticsHandler.handle(StatisticsHandler.java:162)
+! at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:97)
+! at org.eclipse.jetty.server.Server.handle(Server.java:446)
+! at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:271)
+! at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:246)
+! at org.eclipse.jetty.io.AbstractConnection$ReadCallback.run(AbstractConnection.java:358)
+! at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:601)
+! at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:532)
+! at java.lang.Thread.run(Thread.java:745)
+INFO  [2015-04-18 18:17:50,259] [ ] org.eclipse.jetty.server.ServerConnector: Stopped application@f951a7f{HTTP/1.1}{0.0.0.0:26000}
+INFO  [2015-04-18 18:17:50,261] [ ] org.eclipse.jetty.server.ServerConnector: Stopped admin@20cece0b{HTTP/1.1}{0.0.0.0:26001}
+INFO  [2015-04-18 18:17:50,263] [ ] org.eclipse.jetty.server.handler.ContextHandler: Stopped i.d.j.MutableServletContextHandler@2b1cd7bc{/,null,UNAVAILABLE}
+INFO  [2015-04-18 18:17:50,263] [ ] org.eclipse.jetty.server.handler.ContextHandler: Stopped i.d.j.MutableServletContextHandler@7316523a{/,null,UNAVAILABLE}
+INFO  [2015-04-18 18:17:56,796] [ ] io.dropwizard.server.ServerFactory: Starting WoollyService
+INFO  [2015-04-18 18:17:56,996] [ ] org.eclipse.jetty.setuid.SetUIDListener: Opened application@f951a7f{HTTP/1.1}{0.0.0.0:26000}
+INFO  [2015-04-18 18:17:56,997] [ ] org.eclipse.jetty.setuid.SetUIDListener: Opened admin@20cece0b{HTTP/1.1}{0.0.0.0:26001}
+INFO  [2015-04-18 18:17:57,001] [ ] org.eclipse.jetty.server.Server: jetty-9.0.7.v20131107
+INFO  [2015-04-18 18:17:57,170] [ ] com.sun.jersey.guice.spi.container.GuiceComponentProviderFactory: Registering woolly.resource.TestResource as a root resource class
+INFO  [2015-04-18 18:17:57,173] [ ] com.sun.jersey.server.impl.application.WebApplicationImpl: Initiating Jersey application, version 'Jersey: 1.18.1 02/19/2014 03:28 AM'
+INFO  [2015-04-18 18:17:57,414] [ ] io.dropwizard.jersey.DropwizardResourceConfig: The following paths were found for the configured resources:
+
+    GET     /v1/test (woolly.resource.TestResource)
+
+INFO  [2015-04-18 18:17:58,032] [ ] com.sun.jersey.guice.spi.container.GuiceComponentProviderFactory: Binding woolly.resource.TestResource to GuiceManagedComponentProvider with the scope "Singleton"
+INFO  [2015-04-18 18:17:58,071] [ ] org.eclipse.jetty.server.handler.ContextHandler: Started i.d.j.MutableServletContextHandler@33a55bd8{/,null,AVAILABLE}
+INFO  [2015-04-18 18:17:58,077] [ ] io.dropwizard.setup.AdminEnvironment: tasks = 
+
+    POST    /tasks/gc (io.dropwizard.servlets.tasks.GarbageCollectionTask)
+
+WARN  [2015-04-18 18:17:58,079] [ ] io.dropwizard.setup.AdminEnvironment: 
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!    THIS APPLICATION HAS NO HEALTHCHECKS. THIS MEANS YOU WILL NEVER KNOW      !
+!     IF IT DIES IN PRODUCTION, WHICH MEANS YOU WILL NEVER KNOW IF YOU'RE      !
+!    LETTING YOUR USERS DOWN. YOU SHOULD ADD A HEALTHCHECK FOR EACH OF YOUR    !
+!         APPLICATION'S DEPENDENCIES WHICH FULLY (BUT LIGHTLY) TESTS IT.       !
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+INFO  [2015-04-18 18:17:58,091] [ ] org.eclipse.jetty.server.handler.ContextHandler: Started i.d.j.MutableServletContextHandler@33379242{/,null,AVAILABLE}
+INFO  [2015-04-18 18:17:58,118] [ ] org.eclipse.jetty.server.ServerConnector: Started application@f951a7f{HTTP/1.1}{0.0.0.0:26000}
+INFO  [2015-04-18 18:17:58,124] [ ] org.eclipse.jetty.server.ServerConnector: Started admin@20cece0b{HTTP/1.1}{0.0.0.0:26001}
+INFO  [2015-04-18 18:21:51,608] [ ] org.eclipse.jetty.server.ServerConnector: Stopped application@f951a7f{HTTP/1.1}{0.0.0.0:26000}
+INFO  [2015-04-18 18:21:51,609] [ ] org.eclipse.jetty.server.ServerConnector: Stopped admin@20cece0b{HTTP/1.1}{0.0.0.0:26001}
+INFO  [2015-04-18 18:21:51,611] [ ] org.eclipse.jetty.server.handler.ContextHandler: Stopped i.d.j.MutableServletContextHandler@33379242{/,null,UNAVAILABLE}
+INFO  [2015-04-18 18:21:51,611] [ ] org.eclipse.jetty.server.handler.ContextHandler: Stopped i.d.j.MutableServletContextHandler@33a55bd8{/,null,UNAVAILABLE}
+INFO  [2015-04-18 18:21:59,605] [ ] io.dropwizard.server.ServerFactory: Starting WoollyService
+INFO  [2015-04-18 18:21:59,860] [ ] org.eclipse.jetty.setuid.SetUIDListener: Opened application@227a47{HTTP/1.1}{0.0.0.0:26000}
+INFO  [2015-04-18 18:21:59,861] [ ] org.eclipse.jetty.setuid.SetUIDListener: Opened admin@9596ce8{HTTP/1.1}{0.0.0.0:26001}
+INFO  [2015-04-18 18:21:59,865] [ ] org.eclipse.jetty.server.Server: jetty-9.0.7.v20131107
+INFO  [2015-04-18 18:22:00,213] [ ] com.sun.jersey.guice.spi.container.GuiceComponentProviderFactory: Registering woolly.resource.TestResource as a root resource class
+INFO  [2015-04-18 18:22:00,218] [ ] com.sun.jersey.server.impl.application.WebApplicationImpl: Initiating Jersey application, version 'Jersey: 1.18.1 02/19/2014 03:28 AM'
+INFO  [2015-04-18 18:22:00,385] [ ] io.dropwizard.jersey.DropwizardResourceConfig: The following paths were found for the configured resources:
+
+    GET     /v1/test (woolly.resource.TestResource)
+
+INFO  [2015-04-18 18:22:01,048] [ ] com.sun.jersey.guice.spi.container.GuiceComponentProviderFactory: Binding woolly.resource.TestResource to GuiceManagedComponentProvider with the scope "Singleton"
+INFO  [2015-04-18 18:22:01,073] [ ] org.eclipse.jetty.server.handler.ContextHandler: Started i.d.j.MutableServletContextHandler@1668919e{/,null,AVAILABLE}
+INFO  [2015-04-18 18:22:01,079] [ ] io.dropwizard.setup.AdminEnvironment: tasks = 
+
+    POST    /tasks/gc (io.dropwizard.servlets.tasks.GarbageCollectionTask)
+
+WARN  [2015-04-18 18:22:01,079] [ ] io.dropwizard.setup.AdminEnvironment: 
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!    THIS APPLICATION HAS NO HEALTHCHECKS. THIS MEANS YOU WILL NEVER KNOW      !
+!     IF IT DIES IN PRODUCTION, WHICH MEANS YOU WILL NEVER KNOW IF YOU'RE      !
+!    LETTING YOUR USERS DOWN. YOU SHOULD ADD A HEALTHCHECK FOR EACH OF YOUR    !
+!         APPLICATION'S DEPENDENCIES WHICH FULLY (BUT LIGHTLY) TESTS IT.       !
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+INFO  [2015-04-18 18:22:01,088] [ ] org.eclipse.jetty.server.handler.ContextHandler: Started i.d.j.MutableServletContextHandler@1fbf088b{/,null,AVAILABLE}
+INFO  [2015-04-18 18:22:01,101] [ ] org.eclipse.jetty.server.ServerConnector: Started application@227a47{HTTP/1.1}{0.0.0.0:26000}
+INFO  [2015-04-18 18:22:01,105] [ ] org.eclipse.jetty.server.ServerConnector: Started admin@9596ce8{HTTP/1.1}{0.0.0.0:26001}
+INFO  [2015-04-18 18:22:36,993] [ ] org.eclipse.jetty.server.ServerConnector: Stopped application@227a47{HTTP/1.1}{0.0.0.0:26000}
+INFO  [2015-04-18 18:22:36,994] [ ] org.eclipse.jetty.server.ServerConnector: Stopped admin@9596ce8{HTTP/1.1}{0.0.0.0:26001}
+INFO  [2015-04-18 18:22:36,996] [ ] org.eclipse.jetty.server.handler.ContextHandler: Stopped i.d.j.MutableServletContextHandler@1fbf088b{/,null,UNAVAILABLE}
+INFO  [2015-04-18 18:22:36,996] [ ] org.eclipse.jetty.server.handler.ContextHandler: Stopped i.d.j.MutableServletContextHandler@1668919e{/,null,UNAVAILABLE}
+INFO  [2015-04-18 18:26:02,111] [ ] io.dropwizard.server.ServerFactory: Starting WoollyService
+INFO  [2015-04-18 18:26:02,837] [ ] org.eclipse.jetty.setuid.SetUIDListener: Opened application@5b3a7ef5{HTTP/1.1}{0.0.0.0:26000}
+INFO  [2015-04-18 18:26:02,838] [ ] org.eclipse.jetty.setuid.SetUIDListener: Opened admin@8851ce1{HTTP/1.1}{0.0.0.0:26001}
+INFO  [2015-04-18 18:26:02,858] [ ] org.eclipse.jetty.server.Server: jetty-9.0.7.v20131107
+INFO  [2015-04-18 18:26:04,069] [ ] com.sun.jersey.guice.spi.container.GuiceComponentProviderFactory: Registering woolly.resource.TestResource as a root resource class
+INFO  [2015-04-18 18:26:04,091] [ ] com.sun.jersey.server.impl.application.WebApplicationImpl: Initiating Jersey application, version 'Jersey: 1.18.1 02/19/2014 03:28 AM'
+INFO  [2015-04-18 18:26:05,059] [ ] io.dropwizard.jersey.DropwizardResourceConfig: The following paths were found for the configured resources:
+
+    GET     /v1/test (woolly.resource.TestResource)
+
+INFO  [2015-04-18 18:26:08,215] [ ] com.sun.jersey.guice.spi.container.GuiceComponentProviderFactory: Binding woolly.resource.TestResource to GuiceManagedComponentProvider with the scope "Singleton"
+INFO  [2015-04-18 18:26:08,507] [ ] org.eclipse.jetty.server.handler.ContextHandler: Started i.d.j.MutableServletContextHandler@3bb5ceb{/,null,AVAILABLE}
+INFO  [2015-04-18 18:26:08,539] [ ] io.dropwizard.setup.AdminEnvironment: tasks = 
+
+    POST    /tasks/gc (io.dropwizard.servlets.tasks.GarbageCollectionTask)
+
+WARN  [2015-04-18 18:26:08,542] [ ] io.dropwizard.setup.AdminEnvironment: 
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!    THIS APPLICATION HAS NO HEALTHCHECKS. THIS MEANS YOU WILL NEVER KNOW      !
+!     IF IT DIES IN PRODUCTION, WHICH MEANS YOU WILL NEVER KNOW IF YOU'RE      !
+!    LETTING YOUR USERS DOWN. YOU SHOULD ADD A HEALTHCHECK FOR EACH OF YOUR    !
+!         APPLICATION'S DEPENDENCIES WHICH FULLY (BUT LIGHTLY) TESTS IT.       !
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+INFO  [2015-04-18 18:26:08,599] [ ] org.eclipse.jetty.server.handler.ContextHandler: Started i.d.j.MutableServletContextHandler@b67cc70{/,null,AVAILABLE}
+INFO  [2015-04-18 18:26:08,664] [ ] org.eclipse.jetty.server.ServerConnector: Started application@5b3a7ef5{HTTP/1.1}{0.0.0.0:26000}
+INFO  [2015-04-18 18:26:08,668] [ ] org.eclipse.jetty.server.ServerConnector: Started admin@8851ce1{HTTP/1.1}{0.0.0.0:26001}
+INFO  [2015-04-18 18:27:58,593] [ ] org.eclipse.jetty.server.ServerConnector: Stopped application@5b3a7ef5{HTTP/1.1}{0.0.0.0:26000}
+INFO  [2015-04-18 18:27:58,595] [ ] org.eclipse.jetty.server.ServerConnector: Stopped admin@8851ce1{HTTP/1.1}{0.0.0.0:26001}
+INFO  [2015-04-18 18:27:58,598] [ ] org.eclipse.jetty.server.handler.ContextHandler: Stopped i.d.j.MutableServletContextHandler@b67cc70{/,null,UNAVAILABLE}
+INFO  [2015-04-18 18:27:58,599] [ ] org.eclipse.jetty.server.handler.ContextHandler: Stopped i.d.j.MutableServletContextHandler@3bb5ceb{/,null,UNAVAILABLE}
+INFO  [2015-04-18 18:28:58,433] [ ] io.dropwizard.server.ServerFactory: Starting WoollyService
+INFO  [2015-04-18 18:30:59,457] [ ] org.eclipse.jetty.setuid.SetUIDListener: Opened application@63c12e52{HTTP/1.1}{0.0.0.0:26000}
+INFO  [2015-04-18 18:30:59,458] [ ] org.eclipse.jetty.setuid.SetUIDListener: Opened admin@21bd20ee{HTTP/1.1}{0.0.0.0:26001}
+INFO  [2015-04-18 18:31:10,571] [ ] org.eclipse.jetty.server.Server: jetty-9.0.7.v20131107
+INFO  [2015-04-18 18:37:47,274] [ ] com.sun.jersey.guice.spi.container.GuiceComponentProviderFactory: Registering woolly.resource.TestResource as a root resource class
+INFO  [2015-04-18 18:37:47,296] [ ] com.sun.jersey.server.impl.application.WebApplicationImpl: Initiating Jersey application, version 'Jersey: 1.18.1 02/19/2014 03:28 AM'
+INFO  [2015-04-18 18:37:48,267] [ ] io.dropwizard.jersey.DropwizardResourceConfig: The following paths were found for the configured resources:
+
+    GET     /v1/test (woolly.resource.TestResource)
+
+INFO  [2015-04-18 18:37:51,079] [ ] com.sun.jersey.guice.spi.container.GuiceComponentProviderFactory: Binding woolly.resource.TestResource to GuiceManagedComponentProvider with the scope "Singleton"
+INFO  [2015-04-18 18:37:59,859] [ ] org.eclipse.jetty.server.handler.ContextHandler: Started i.d.j.MutableServletContextHandler@43af351a{/,null,AVAILABLE}
+INFO  [2015-04-18 18:38:38,510] [ ] io.dropwizard.setup.AdminEnvironment: tasks = 
+
+    POST    /tasks/gc (io.dropwizard.servlets.tasks.GarbageCollectionTask)
+
+WARN  [2015-04-18 18:38:38,517] [ ] io.dropwizard.setup.AdminEnvironment: 
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!    THIS APPLICATION HAS NO HEALTHCHECKS. THIS MEANS YOU WILL NEVER KNOW      !
+!     IF IT DIES IN PRODUCTION, WHICH MEANS YOU WILL NEVER KNOW IF YOU'RE      !
+!    LETTING YOUR USERS DOWN. YOU SHOULD ADD A HEALTHCHECK FOR EACH OF YOUR    !
+!         APPLICATION'S DEPENDENCIES WHICH FULLY (BUT LIGHTLY) TESTS IT.       !
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+INFO  [2015-04-18 18:39:03,453] [ ] org.eclipse.jetty.server.handler.ContextHandler: Started i.d.j.MutableServletContextHandler@7d97e06c{/,null,AVAILABLE}
+INFO  [2015-04-18 18:39:15,317] [ ] org.eclipse.jetty.server.ServerConnector: Started application@63c12e52{HTTP/1.1}{0.0.0.0:26000}
+INFO  [2015-04-18 18:39:24,580] [ ] org.eclipse.jetty.server.ServerConnector: Started admin@21bd20ee{HTTP/1.1}{0.0.0.0:26001}
+INFO  [2015-04-18 18:45:42,987] [ ] org.eclipse.jetty.server.ServerConnector: Stopped application@63c12e52{HTTP/1.1}{0.0.0.0:26000}
+INFO  [2015-04-18 18:45:42,988] [ ] org.eclipse.jetty.server.ServerConnector: Stopped admin@21bd20ee{HTTP/1.1}{0.0.0.0:26001}
+INFO  [2015-04-18 18:45:42,990] [ ] org.eclipse.jetty.server.handler.ContextHandler: Stopped i.d.j.MutableServletContextHandler@7d97e06c{/,null,UNAVAILABLE}
+INFO  [2015-04-18 18:45:42,991] [ ] org.eclipse.jetty.server.handler.ContextHandler: Stopped i.d.j.MutableServletContextHandler@43af351a{/,null,UNAVAILABLE}
+INFO  [2015-04-18 18:46:37,463] [ ] io.dropwizard.server.ServerFactory: Starting WoollyService
+INFO  [2015-04-18 18:46:40,717] [ ] org.eclipse.jetty.setuid.SetUIDListener: Opened application@421056e5{HTTP/1.1}{0.0.0.0:26000}
+INFO  [2015-04-18 18:46:40,717] [ ] org.eclipse.jetty.setuid.SetUIDListener: Opened admin@2849434b{HTTP/1.1}{0.0.0.0:26001}
+INFO  [2015-04-18 18:46:40,721] [ ] org.eclipse.jetty.server.Server: jetty-9.0.7.v20131107
+INFO  [2015-04-18 18:47:01,974] [ ] com.sun.jersey.guice.spi.container.GuiceComponentProviderFactory: Registering woolly.resource.TestResource as a root resource class
+INFO  [2015-04-18 18:47:01,980] [ ] com.sun.jersey.server.impl.application.WebApplicationImpl: Initiating Jersey application, version 'Jersey: 1.18.1 02/19/2014 03:28 AM'
+INFO  [2015-04-18 18:47:02,100] [ ] io.dropwizard.jersey.DropwizardResourceConfig: The following paths were found for the configured resources:
+
+    GET     /v1/test (woolly.resource.TestResource)
+
+INFO  [2015-04-18 18:47:02,495] [ ] com.sun.jersey.guice.spi.container.GuiceComponentProviderFactory: Binding woolly.resource.TestResource to GuiceManagedComponentProvider with the scope "Singleton"
+INFO  [2015-04-18 18:47:02,528] [ ] org.eclipse.jetty.server.handler.ContextHandler: Started i.d.j.MutableServletContextHandler@252a8aae{/,null,AVAILABLE}
+INFO  [2015-04-18 18:47:02,535] [ ] io.dropwizard.setup.AdminEnvironment: tasks = 
+
+    POST    /tasks/gc (io.dropwizard.servlets.tasks.GarbageCollectionTask)
+
+WARN  [2015-04-18 18:47:02,541] [ ] io.dropwizard.setup.AdminEnvironment: 
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!    THIS APPLICATION HAS NO HEALTHCHECKS. THIS MEANS YOU WILL NEVER KNOW      !
+!     IF IT DIES IN PRODUCTION, WHICH MEANS YOU WILL NEVER KNOW IF YOU'RE      !
+!    LETTING YOUR USERS DOWN. YOU SHOULD ADD A HEALTHCHECK FOR EACH OF YOUR    !
+!         APPLICATION'S DEPENDENCIES WHICH FULLY (BUT LIGHTLY) TESTS IT.       !
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+INFO  [2015-04-18 18:47:02,549] [ ] org.eclipse.jetty.server.handler.ContextHandler: Started i.d.j.MutableServletContextHandler@1d8b0500{/,null,AVAILABLE}
+INFO  [2015-04-18 18:47:02,566] [ ] org.eclipse.jetty.server.ServerConnector: Started application@421056e5{HTTP/1.1}{0.0.0.0:26000}
+INFO  [2015-04-18 18:47:02,573] [ ] org.eclipse.jetty.server.ServerConnector: Started admin@2849434b{HTTP/1.1}{0.0.0.0:26001}
+INFO  [2015-04-18 18:47:31,932] [ ] org.eclipse.jetty.server.ServerConnector: Stopped application@421056e5{HTTP/1.1}{0.0.0.0:26000}
+INFO  [2015-04-18 18:47:31,934] [ ] org.eclipse.jetty.server.ServerConnector: Stopped admin@2849434b{HTTP/1.1}{0.0.0.0:26001}
+INFO  [2015-04-18 18:47:31,937] [ ] org.eclipse.jetty.server.handler.ContextHandler: Stopped i.d.j.MutableServletContextHandler@1d8b0500{/,null,UNAVAILABLE}
+INFO  [2015-04-18 18:47:31,937] [ ] org.eclipse.jetty.server.handler.ContextHandler: Stopped i.d.j.MutableServletContextHandler@252a8aae{/,null,UNAVAILABLE}
+INFO  [2015-04-18 18:47:40,908] [ ] io.dropwizard.server.ServerFactory: Starting WoollyService
+INFO  [2015-04-18 18:47:45,800] [ ] org.eclipse.jetty.setuid.SetUIDListener: Opened application@9596ce8{HTTP/1.1}{0.0.0.0:26000}
+INFO  [2015-04-18 18:47:45,801] [ ] org.eclipse.jetty.setuid.SetUIDListener: Opened admin@75ae4a1f{HTTP/1.1}{0.0.0.0:26001}
+INFO  [2015-04-18 18:47:45,811] [ ] org.eclipse.jetty.server.Server: jetty-9.0.7.v20131107
+INFO  [2015-04-18 18:47:46,067] [ ] com.sun.jersey.guice.spi.container.GuiceComponentProviderFactory: Registering woolly.resource.TestResource as a root resource class
+INFO  [2015-04-18 18:47:46,075] [ ] com.sun.jersey.server.impl.application.WebApplicationImpl: Initiating Jersey application, version 'Jersey: 1.18.1 02/19/2014 03:28 AM'
+INFO  [2015-04-18 18:47:46,209] [ ] io.dropwizard.jersey.DropwizardResourceConfig: The following paths were found for the configured resources:
+
+    GET     /v1/test (woolly.resource.TestResource)
+
+INFO  [2015-04-18 18:47:46,651] [ ] com.sun.jersey.guice.spi.container.GuiceComponentProviderFactory: Binding woolly.resource.TestResource to GuiceManagedComponentProvider with the scope "Singleton"
+INFO  [2015-04-18 18:47:46,669] [ ] org.eclipse.jetty.server.handler.ContextHandler: Started i.d.j.MutableServletContextHandler@63300c4b{/,null,AVAILABLE}
+INFO  [2015-04-18 18:47:46,674] [ ] io.dropwizard.setup.AdminEnvironment: tasks = 
+
+    POST    /tasks/gc (io.dropwizard.servlets.tasks.GarbageCollectionTask)
+
+WARN  [2015-04-18 18:47:46,674] [ ] io.dropwizard.setup.AdminEnvironment: 
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!    THIS APPLICATION HAS NO HEALTHCHECKS. THIS MEANS YOU WILL NEVER KNOW      !
+!     IF IT DIES IN PRODUCTION, WHICH MEANS YOU WILL NEVER KNOW IF YOU'RE      !
+!    LETTING YOUR USERS DOWN. YOU SHOULD ADD A HEALTHCHECK FOR EACH OF YOUR    !
+!         APPLICATION'S DEPENDENCIES WHICH FULLY (BUT LIGHTLY) TESTS IT.       !
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+INFO  [2015-04-18 18:47:46,680] [ ] org.eclipse.jetty.server.handler.ContextHandler: Started i.d.j.MutableServletContextHandler@1943c1f2{/,null,AVAILABLE}
+INFO  [2015-04-18 18:47:46,689] [ ] org.eclipse.jetty.server.ServerConnector: Started application@9596ce8{HTTP/1.1}{0.0.0.0:26000}
+INFO  [2015-04-18 18:47:46,690] [ ] org.eclipse.jetty.server.ServerConnector: Started admin@75ae4a1f{HTTP/1.1}{0.0.0.0:26001}
+INFO  [2015-04-18 18:50:03,233] [ ] org.eclipse.jetty.server.ServerConnector: Stopped application@9596ce8{HTTP/1.1}{0.0.0.0:26000}
+INFO  [2015-04-18 18:50:03,234] [ ] org.eclipse.jetty.server.ServerConnector: Stopped admin@75ae4a1f{HTTP/1.1}{0.0.0.0:26001}
+INFO  [2015-04-18 18:50:03,236] [ ] org.eclipse.jetty.server.handler.ContextHandler: Stopped i.d.j.MutableServletContextHandler@1943c1f2{/,null,UNAVAILABLE}
+INFO  [2015-04-18 18:50:03,237] [ ] org.eclipse.jetty.server.handler.ContextHandler: Stopped i.d.j.MutableServletContextHandler@63300c4b{/,null,UNAVAILABLE}
+INFO  [2015-04-18 18:50:24,862] [ ] io.dropwizard.server.ServerFactory: Starting WoollyService
+INFO  [2015-04-18 18:50:32,557] [ ] org.eclipse.jetty.setuid.SetUIDListener: Opened application@2d9dff65{HTTP/1.1}{0.0.0.0:26000}
+INFO  [2015-04-18 18:50:32,558] [ ] org.eclipse.jetty.setuid.SetUIDListener: Opened admin@5ef6fd7f{HTTP/1.1}{0.0.0.0:26001}
+INFO  [2015-04-18 18:50:32,562] [ ] org.eclipse.jetty.server.Server: jetty-9.0.7.v20131107
+INFO  [2015-04-18 18:50:32,839] [ ] com.sun.jersey.guice.spi.container.GuiceComponentProviderFactory: Registering woolly.resource.TestResource as a root resource class
+INFO  [2015-04-18 18:50:32,843] [ ] com.sun.jersey.server.impl.application.WebApplicationImpl: Initiating Jersey application, version 'Jersey: 1.18.1 02/19/2014 03:28 AM'
+INFO  [2015-04-18 18:50:32,969] [ ] io.dropwizard.jersey.DropwizardResourceConfig: The following paths were found for the configured resources:
+
+    GET     /v1/test (woolly.resource.TestResource)
+
+INFO  [2015-04-18 18:50:33,417] [ ] com.sun.jersey.guice.spi.container.GuiceComponentProviderFactory: Binding woolly.resource.TestResource to GuiceManagedComponentProvider with the scope "Singleton"
+INFO  [2015-04-18 18:50:33,457] [ ] org.eclipse.jetty.server.handler.ContextHandler: Started i.d.j.MutableServletContextHandler@3a6045c6{/,null,AVAILABLE}
+INFO  [2015-04-18 18:50:33,470] [ ] io.dropwizard.setup.AdminEnvironment: tasks = 
+
+    POST    /tasks/gc (io.dropwizard.servlets.tasks.GarbageCollectionTask)
+
+WARN  [2015-04-18 18:50:33,470] [ ] io.dropwizard.setup.AdminEnvironment: 
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!    THIS APPLICATION HAS NO HEALTHCHECKS. THIS MEANS YOU WILL NEVER KNOW      !
+!     IF IT DIES IN PRODUCTION, WHICH MEANS YOU WILL NEVER KNOW IF YOU'RE      !
+!    LETTING YOUR USERS DOWN. YOU SHOULD ADD A HEALTHCHECK FOR EACH OF YOUR    !
+!         APPLICATION'S DEPENDENCIES WHICH FULLY (BUT LIGHTLY) TESTS IT.       !
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+INFO  [2015-04-18 18:50:33,478] [ ] org.eclipse.jetty.server.handler.ContextHandler: Started i.d.j.MutableServletContextHandler@1e1eeedd{/,null,AVAILABLE}
+INFO  [2015-04-18 18:50:33,493] [ ] org.eclipse.jetty.server.ServerConnector: Started application@2d9dff65{HTTP/1.1}{0.0.0.0:26000}
+INFO  [2015-04-18 18:50:33,499] [ ] org.eclipse.jetty.server.ServerConnector: Started admin@5ef6fd7f{HTTP/1.1}{0.0.0.0:26001}
+INFO  [2015-04-18 22:08:06,817] [ ] org.eclipse.jetty.server.ServerConnector: Stopped application@2d9dff65{HTTP/1.1}{0.0.0.0:26000}
+INFO  [2015-04-18 22:08:06,821] [ ] org.eclipse.jetty.server.ServerConnector: Stopped admin@5ef6fd7f{HTTP/1.1}{0.0.0.0:26001}
+INFO  [2015-04-18 22:08:06,828] [ ] org.eclipse.jetty.server.handler.ContextHandler: Stopped i.d.j.MutableServletContextHandler@1e1eeedd{/,null,UNAVAILABLE}
+INFO  [2015-04-18 22:08:06,831] [ ] org.eclipse.jetty.server.handler.ContextHandler: Stopped i.d.j.MutableServletContextHandler@3a6045c6{/,null,UNAVAILABLE}
+INFO  [2015-04-18 22:09:15,941] [ ] io.dropwizard.server.ServerFactory: Starting WoollyService
+INFO  [2015-04-18 22:09:29,515] [ ] org.eclipse.jetty.setuid.SetUIDListener: Opened application@227a47{HTTP/1.1}{0.0.0.0:26000}
+INFO  [2015-04-18 22:09:29,515] [ ] org.eclipse.jetty.setuid.SetUIDListener: Opened admin@9596ce8{HTTP/1.1}{0.0.0.0:26001}
+INFO  [2015-04-18 22:09:29,519] [ ] org.eclipse.jetty.server.Server: jetty-9.0.7.v20131107
+INFO  [2015-04-18 22:09:29,761] [ ] com.sun.jersey.guice.spi.container.GuiceComponentProviderFactory: Registering woolly.resource.TestResource as a root resource class
+INFO  [2015-04-18 22:09:29,765] [ ] com.sun.jersey.server.impl.application.WebApplicationImpl: Initiating Jersey application, version 'Jersey: 1.18.1 02/19/2014 03:28 AM'
+INFO  [2015-04-18 22:09:29,908] [ ] io.dropwizard.jersey.DropwizardResourceConfig: The following paths were found for the configured resources:
+
+    GET     /v1/test (woolly.resource.TestResource)
+
+INFO  [2015-04-18 22:09:30,464] [ ] com.sun.jersey.guice.spi.container.GuiceComponentProviderFactory: Binding woolly.resource.TestResource to GuiceManagedComponentProvider with the scope "Singleton"
+INFO  [2015-04-18 22:09:30,498] [ ] org.eclipse.jetty.server.handler.ContextHandler: Started i.d.j.MutableServletContextHandler@7316523a{/,null,AVAILABLE}
+INFO  [2015-04-18 22:09:30,502] [ ] io.dropwizard.setup.AdminEnvironment: tasks = 
+
+    POST    /tasks/gc (io.dropwizard.servlets.tasks.GarbageCollectionTask)
+
+WARN  [2015-04-18 22:09:30,503] [ ] io.dropwizard.setup.AdminEnvironment: 
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!    THIS APPLICATION HAS NO HEALTHCHECKS. THIS MEANS YOU WILL NEVER KNOW      !
+!     IF IT DIES IN PRODUCTION, WHICH MEANS YOU WILL NEVER KNOW IF YOU'RE      !
+!    LETTING YOUR USERS DOWN. YOU SHOULD ADD A HEALTHCHECK FOR EACH OF YOUR    !
+!         APPLICATION'S DEPENDENCIES WHICH FULLY (BUT LIGHTLY) TESTS IT.       !
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+INFO  [2015-04-18 22:09:30,513] [ ] org.eclipse.jetty.server.handler.ContextHandler: Started i.d.j.MutableServletContextHandler@2b1cd7bc{/,null,AVAILABLE}
+INFO  [2015-04-18 22:09:30,526] [ ] org.eclipse.jetty.server.ServerConnector: Started application@227a47{HTTP/1.1}{0.0.0.0:26000}
+INFO  [2015-04-18 22:09:30,527] [ ] org.eclipse.jetty.server.ServerConnector: Started admin@9596ce8{HTTP/1.1}{0.0.0.0:26001}
+INFO  [2015-04-18 23:10:10,749] [ ] org.eclipse.jetty.server.ServerConnector: Stopped application@227a47{HTTP/1.1}{0.0.0.0:26000}
+INFO  [2015-04-18 23:10:10,751] [ ] org.eclipse.jetty.server.ServerConnector: Stopped admin@9596ce8{HTTP/1.1}{0.0.0.0:26001}
+INFO  [2015-04-18 23:10:10,753] [ ] org.eclipse.jetty.server.handler.ContextHandler: Stopped i.d.j.MutableServletContextHandler@2b1cd7bc{/,null,UNAVAILABLE}
+INFO  [2015-04-18 23:10:10,754] [ ] org.eclipse.jetty.server.handler.ContextHandler: Stopped i.d.j.MutableServletContextHandler@7316523a{/,null,UNAVAILABLE}
+INFO  [2015-04-19 16:12:52,389] [ ] io.dropwizard.server.ServerFactory: Starting WoollyService
+INFO  [2015-04-19 16:12:52,664] [ ] org.eclipse.jetty.setuid.SetUIDListener: Opened application@63c12e52{HTTP/1.1}{0.0.0.0:26000}
+INFO  [2015-04-19 16:12:52,665] [ ] org.eclipse.jetty.setuid.SetUIDListener: Opened admin@21bd20ee{HTTP/1.1}{0.0.0.0:26001}
+INFO  [2015-04-19 16:12:52,669] [ ] org.eclipse.jetty.server.Server: jetty-9.0.7.v20131107
+INFO  [2015-04-19 16:12:52,931] [ ] com.sun.jersey.guice.spi.container.GuiceComponentProviderFactory: Registering woolly.resource.TestResource as a root resource class
+INFO  [2015-04-19 16:12:52,936] [ ] com.sun.jersey.server.impl.application.WebApplicationImpl: Initiating Jersey application, version 'Jersey: 1.18.1 02/19/2014 03:28 AM'
+INFO  [2015-04-19 16:12:53,087] [ ] io.dropwizard.jersey.DropwizardResourceConfig: The following paths were found for the configured resources:
+
+    GET     /v1/test (woolly.resource.TestResource)
+
+INFO  [2015-04-19 16:12:53,538] [ ] com.sun.jersey.guice.spi.container.GuiceComponentProviderFactory: Binding woolly.resource.TestResource to GuiceManagedComponentProvider with the scope "Singleton"
+INFO  [2015-04-19 16:12:53,573] [ ] org.eclipse.jetty.server.handler.ContextHandler: Started i.d.j.MutableServletContextHandler@63300c4b{/,null,AVAILABLE}
+INFO  [2015-04-19 16:12:53,584] [ ] io.dropwizard.setup.AdminEnvironment: tasks = 
+
+    POST    /tasks/gc (io.dropwizard.servlets.tasks.GarbageCollectionTask)
+
+WARN  [2015-04-19 16:12:53,584] [ ] io.dropwizard.setup.AdminEnvironment: 
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!    THIS APPLICATION HAS NO HEALTHCHECKS. THIS MEANS YOU WILL NEVER KNOW      !
+!     IF IT DIES IN PRODUCTION, WHICH MEANS YOU WILL NEVER KNOW IF YOU'RE      !
+!    LETTING YOUR USERS DOWN. YOU SHOULD ADD A HEALTHCHECK FOR EACH OF YOUR    !
+!         APPLICATION'S DEPENDENCIES WHICH FULLY (BUT LIGHTLY) TESTS IT.       !
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+INFO  [2015-04-19 16:12:53,596] [ ] org.eclipse.jetty.server.handler.ContextHandler: Started i.d.j.MutableServletContextHandler@1943c1f2{/,null,AVAILABLE}
+INFO  [2015-04-19 16:12:53,611] [ ] org.eclipse.jetty.server.ServerConnector: Started application@63c12e52{HTTP/1.1}{0.0.0.0:26000}
+INFO  [2015-04-19 16:12:53,619] [ ] org.eclipse.jetty.server.ServerConnector: Started admin@21bd20ee{HTTP/1.1}{0.0.0.0:26001}
+INFO  [2015-04-19 16:14:00,154] [ ] org.eclipse.jetty.server.ServerConnector: Stopped application@63c12e52{HTTP/1.1}{0.0.0.0:26000}
+INFO  [2015-04-19 16:14:00,155] [ ] org.eclipse.jetty.server.ServerConnector: Stopped admin@21bd20ee{HTTP/1.1}{0.0.0.0:26001}
+INFO  [2015-04-19 16:14:00,156] [ ] org.eclipse.jetty.server.handler.ContextHandler: Stopped i.d.j.MutableServletContextHandler@1943c1f2{/,null,UNAVAILABLE}
+INFO  [2015-04-19 16:14:00,157] [ ] org.eclipse.jetty.server.handler.ContextHandler: Stopped i.d.j.MutableServletContextHandler@63300c4b{/,null,UNAVAILABLE}

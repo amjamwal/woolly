@@ -1,0 +1,91 @@
+apply plugin: 'idea'
+apply plugin: 'java'
+
+test {
+    useTestNG()
+}
+
+
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+}
+
+dependencies {
+    repositories {
+        maven { url 'http://artifactory.nm.flipkart.com:8081/artifactory/libs-releases' }
+        maven { url 'http://artifactory.nm.flipkart.com:8081/artifactory/libs-snapshots' }
+        mavenCentral()
+    }
+
+    compile 'joda-time:joda-time:2.3',
+            'com.google.guava:guava:15.0',
+            'mysql:mysql-connector-java:5.1.28',
+            'com.jayway.jsonpath:json-path:0.9.1',
+            'org.hibernate:hibernate-entitymanager:4.3.0.Final',
+            'fk.sp.common:common-extensions:1.2.+',
+            'fk.sp.common:scheduler:1.2.+',
+            'fk.sp.common:event-handler:1.2.+'
+
+    compile 'io.dropwizard:dropwizard-core:0.7.1',
+            'io.dropwizard:dropwizard-jdbi:0.7.1',
+            'io.dropwizard:dropwizard-migrations:0.7.1'
+    compile('com.hubspot.dropwizard:dropwizard-guice:' + '0.7.0.2') {
+        exclude group: 'com.google.inject', module: 'guice_servlet'
+    }
+
+    compile 'com.google.inject.extensions:guice-multibindings:3.0',
+            'com.google.inject.extensions:guice-persist:3.0'
+
+    compile 'org.slf4j:slf4j-api:1.7.5',
+            'org.slf4j:log4j-over-slf4j:1.7.5'
+
+    compile 'net.sf.dozer:dozer:5.4.0'
+
+    compile 'fk.sp.framework:config-dropwizard:0.1.4'
+
+    compile 'com.wordnik:swagger-jaxrs_2.9.1:1.3.1',
+            'org.eclipse.jetty:jetty-servlets:8.1.10.v20130312'
+
+    compile 'org.quartz-scheduler:quartz:2.2.1'
+    compile 'org.apache.onami:org.apache.onami.scheduler:1.4.0'
+
+    compile('com.sun.jersey.contribs:jersey-multipart:1.18.1') {
+        exclude group: "org.jvnet", module: 'mimepull'
+    }
+    compile 'com.palominolabs.metrics:metrics-guice:3.1.0'
+    compile 'org.jvnet.mimepull:mimepull:1.9.3'
+
+    compile 'fk.sp.framework:config-dropwizard:0.1.0'
+    compile('flipkart.retail.libraries:dropwizard-admin:5.0.3') {
+        exclude group: "org.jadira.usertype", module: 'usertype.core'
+    }
+    compile('com.restbus:dropwizard-hibernate-plugin:1.0.7.5-SNAPSHOT') {
+        exclude group: "org.jadira.usertype", module: 'usertype.core'
+    }
+    compile 'org.apache.velocity:velocity:1.7'
+    compile 'org.modelmapper:modelmapper:0.6.3'
+    compile 'org.apache.commons:commons-csv:1.1'
+
+    testCompile 'pl.pragmatists:JUnitParams:1.0.3'
+    testCompile 'org.hsqldb:hsqldb:2.3.1'
+    testCompile 'org.testng:testng:6.8.8'
+    testCompile 'fk.sp.common:common-test-extensions:1.2.+'
+    testCompile 'org.jukito:jukito:1.3'
+    testCompile 'io.dropwizard:dropwizard-testing:0.7.1'
+    testCompile 'org.hamcrest:hamcrest-all:1.3'
+    testCompile 'org.skyscreamer:jsonassert:1.2.3'
+}
+
+task createWrapper(type: Wrapper) {
+    gradleVersion = '2.1'
+}
+
+configurations {
+    all*.exclude group: 'log4j', module: 'log4j'
+    all*.exclude group: 'org.slf4j', module: 'slf4j-log4j12'
+    all*.exclude group: 'org.slf4j', module: 'slf4j-simple'
+}
+
+sourceSets.main.output.resourcesDir = sourceSets.main.output.classesDir
