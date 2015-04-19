@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: org.apache.onami:org.apache.onami.scheduler:1.4.0">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.onami/org.apache.onami.scheduler/1.4.0/e72a19bf96da21d7820a7840e4ff6d7564770d26/org.apache.onami.scheduler-1.4.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.onami/org.apache.onami.scheduler/1.4.0/65119cd7d2195de8eff827c6992ae7962d29c539/org.apache.onami.scheduler-1.4.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

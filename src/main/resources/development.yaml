@@ -1,0 +1,76 @@
+server:
+  applicationConnectors:
+  - type: http
+    port: 26000
+  adminConnectors:
+  - type: http
+    port: 26001
+  minThreads: 8
+  maxThreads: 1024
+  gzip:
+    enabled: true
+  requestLog:
+    timeZone: IST
+    appenders:
+    - type: file
+      logFormat: "%-5p [%d{ISO8601}] [%X{reqId} %X{txnId}] %c: %m\n%ex"
+      currentLogFilename: ./logs/request.log
+      archive: true
+      archivedLogFilenamePattern: ./logs/request-%d.log.gz
+      archivedFileCount: 5
+    - type: console
+      logFormat: "%-5p [%d{ISO8601}] [%X{reqId} %X{txnId}] %c: %m\n%ex"
+
+databaseConfiguration:
+  # the name of your JDBC driver
+  driverClass: com.mysql.jdbc.Driver
+
+  # the username
+  user: root
+
+  # the password
+  password:
+
+  # the JDBC URL
+  url:  jdbc:mysql://localhost/test
+
+  # any properties specific to your JDBC driver:
+  properties:
+    charSet: UTF-8
+    zeroDateTimeBehavior: convertToNull
+
+  # the maximum amount of time to wait on an empty pool before throwing an exception
+  maxWaitForConnection: 1s
+
+  # the SQL query to run when validating a connection's liveness
+  validationQuery: "/* MyService Health Check */ SELECT 1"
+
+  # the minimum number of connections to keep open
+  minSize: 8
+
+  # the maximum number of connections to keep open
+  maxSize: 100
+
+  # whether or not idle connections should be validated
+  checkConnectionWhileIdle: true
+
+  # how long a connection must be held before it can be validated
+  validationInterval: 10s
+
+  # the maximum lifetime of an idle connection
+  minIdleTime: 1 minute
+
+logging:
+  level: INFO
+  appenders:
+    - type: file
+      threshold: INFO
+      timeZone: IST
+      logFormat: "%-5p [%d{ISO8601}] [%X{reqId} %X{txnId}] %c: %m\n%ex"
+      currentLogFilename: ./logs/woolly.log
+      archive: true
+      archivedLogFilenamePattern: ./logs/woolly-%d.log.gz
+      archivedFileCount: 5
+    - type: console
+      threshold: ALL
+      logFormat: "%-5p [%d{ISO8601}] [%X{reqId} %X{txnId}] %c: %m\n%ex"

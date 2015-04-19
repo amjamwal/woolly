@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: com.yammer.dropwizard:dropwizard-hibernate:0.6.2">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.yammer.dropwizard/dropwizard-hibernate/0.6.2/58028c37b09f387c6451cc3a9d312b3eec14db20/dropwizard-hibernate-0.6.2.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.yammer.dropwizard/dropwizard-hibernate/0.6.2/2f1a380b74c3a5549e278cfcfbcdbefa5cb87aca/dropwizard-hibernate-0.6.2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

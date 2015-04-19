@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: com.netflix.hystrix:hystrix-codahale-metrics-publisher:1.3.18">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.netflix.hystrix/hystrix-codahale-metrics-publisher/1.3.18/3864aba943cb52273024d6ff41c66483a39b3234/hystrix-codahale-metrics-publisher-1.3.18.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.netflix.hystrix/hystrix-codahale-metrics-publisher/1.3.18/4e7a049765f90dfa00f17f40bb8da683137119f3/hystrix-codahale-metrics-publisher-1.3.18-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

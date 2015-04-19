@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: com.flipkart.configservice:cfgsvc-client-java:0.3.0">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.flipkart.configservice/cfgsvc-client-java/0.3.0/16c5575fc283c15b387cc47f44174660d8b65c7e/cfgsvc-client-java-0.3.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.flipkart.configservice/cfgsvc-client-java/0.3.0/d148a91eed6463f4bd77c1e9f476b1f9ba05a901/cfgsvc-client-java-0.3.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
